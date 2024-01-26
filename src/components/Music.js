@@ -29,7 +29,7 @@ export default class Music extends Component {
                 );
               })}
             </div>
-            <h1><span>Listen whole discography</span></h1>
+            <h1><span>Listen whole Discography</span></h1>
             <div class="player-container">
             <ReactPlayer
         url="https://soundcloud.com/spirittoy/sets/spirit-toy-hir-n?si=0224b45f02db453b808e2c4c83491e9c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
