@@ -34,7 +34,7 @@ export default class Music extends Component {
             <ReactPlayer
         url="https://soundcloud.com/spirittoy/sets/spirit-toy-hir-n?si=0224b45f02db453b808e2c4c83491e9c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
       /></div>
-       <h1><span>Videos videos</span></h1>
+       <h1><span>Videos</span></h1>
       <div class="player-container">
       <iframe width="800px" height="450px" src="https://www.youtube.com/embed/videoseries?si=jh1EqnRja0KYdLbh&list=PL1t6M0BZsk-SQUiaJHuA74pafr0Szq2NZ" title="Spirit Toy Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
