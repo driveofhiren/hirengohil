@@ -2,10 +2,35 @@ import React, { Component } from 'react';
 
 export default class Resume extends Component {
   getBackgroundColor = (level) => {
-    const red = Math.round((100 - level) * 2.55);
-    const green = Math.round(level * 2.55);
-    return `rgb(${red}, ${green}, 0)`;
-  };
+    let red, green, blue;
+
+    if (level >= 75) {
+        // Very High level: (1, 239, 172)
+        red = 1;
+        green = Math.round(238 * (4 - (level / 100)));
+        blue = 172;
+    } else if (level >= 50) {
+        // High level: (67, 192, 246)
+        red = 255;
+        green = Math.round(192 + (level - 50) * 1.2);
+        blue = 100;
+    } else if (level >= 30) {
+        // Mid level: (172, 215, 130)
+        red = 172;
+        green = Math.round(215 - (level - 25) * 2);
+        blue = 130;
+    } else {
+        // Low level: (204, 0, 50)
+        red = 204;
+        green = Math.round(50 * (level / 25));
+        blue = 50;
+    }
+
+    return `rgb(${red}, ${green}, ${blue})`;
+};
+
+
+  
 
   render() {
     let resumeData = this.props.resumeData;

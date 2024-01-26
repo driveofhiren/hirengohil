@@ -19,12 +19,12 @@ const Header = ({ resumeData }) => (
           </li>
           <li>
             <a className="smoothscroll" href="#resume">
-              Resume
+              Skills
             </a>
           </li>
           <li>
             <a className="smoothscroll" href="#portfolio">
-              Works
+              Projects
             </a>
           </li>
           <li>
@@ -42,20 +42,22 @@ const Header = ({ resumeData }) => (
             {resumeData.roleDescription}
           </h3>
           <div className="text-center mt-4">
-            <Button variant="outline-success">
-              <a href={`mailto:${resumeData.email}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                Email
-              </a>
-            </Button>
-            <Button variant="outline-success">
-              <a href={`tel:${resumeData.phone}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                Call
-              </a>
-            </Button>
-            <button onClick={() => (window.location.href = resumeData.cv)} className="btn btn-outline-info">
-              Download CV
-            </button>
-          </div>
+  <Button style={{ background: '#01efac', color: '#0d0325', marginRight: '10px' }}>
+    <a href={`mailto:${resumeData.email}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+      Email
+    </a>
+  </Button>
+  <Button style={{ background: '#01cbae', color: '#0d0325', marginRight: '10px' }}>
+    <a href={`tel:${resumeData.phone}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+      Call
+    </a>
+  </Button>
+  <Button style={{ backgroundColor: '#99eade', color: '#0d0325', marginRight: '10px'}} onClick={() => (window.location.href = resumeData.cv)} className="btn btn-outline-info">
+  Download CV
+</Button>
+
+</div>
+
           <hr />
           <ul className="social">
             {resumeData.socialLinks &&

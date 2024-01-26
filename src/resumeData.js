@@ -124,7 +124,7 @@ const resumeData = {
   "skills": [
     {
       "skillname": "HTML5/CSS",
-      "level": 95
+      "level": 80
     },
     {
       "skillname": "Reactjs",
@@ -140,11 +140,11 @@ const resumeData = {
     },
     {
       "skillname": "SQL",
-      "level": 70
+      "level": 50
     },
     {
       "skillname": "PHP",
-      "level": 95
+      "level": 29
     },
     {
       "skillname": "ASP.NET",
