@@ -78,8 +78,7 @@ audio:not([controls]) {
 [hidden] { display: none; }
 
 code, kbd, pre, samp {
-   font-family: monospace, serif;
-   font-size: 1em;
+   font-family: 'Roboto', sans-serif;
 }
 
 pre {
@@ -137,7 +136,7 @@ table {
    box-sizing: border-box;
 }
 :root {
-   font-family: 'Roboto' !important;
+   font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -147,11 +146,11 @@ html {
 
 body {
    background: #fff;
-   font-family: 'Roboto' !important;
+   font-family: 'Roboto', sans-serif;
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
-	color: #838C95;
+	color: #ffffff;
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -163,7 +162,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
    color: #ffffff;
-	font-family: 'opensans-bold', sans-serif;
+   font-family: 'Roboto', sans-serif;
    font-weight: normal;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
@@ -178,14 +177,14 @@ h6 { font-size: 14px; line-height: 30px; }
 p { margin: 0 0 30px 0; }
 p img { margin: 0; }
 p.lead {
-   font: 19px/36px 'opensans-light', sans-serif;
+   font: 19px/36px 'Roboto', sans-serif;
    margin-bottom: 18px;
 }
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */
-em { font: 15px/30px 'opensans-italic', sans-serif; }
-strong, b { font: 15px/30px 'opensans-bold', sans-serif; }
+em { font: 15px/30px 'Roboto', sans-serif; }
+strong, b { font: 15px/30px 'Roboto', sans-serif; }
 small { font-size: 11px; line-height: inherit; }
 
 /*	Blockquotes */
@@ -200,8 +199,7 @@ blockquote:before {
    font-size: 80px;
    line-height: 0px;
    margin: 0;
-   font-family: arial, sans-serif;
-
+   font-family: 'Roboto', sans-serif;
    position: absolute;
    top:  30px;
 	left: 0;
@@ -242,7 +240,7 @@ blockquote cite a:visited { color: #8B9798; border: none }
 	opacity: 0.45;
 	position: absolute;
 	font-size: 80px;
-   font-family: Arial, Sans-Serif;
+   font-family: 'Roboto', sans-serif;
 }
 .pull-quote:before {
 	content: "\201C";
@@ -263,7 +261,7 @@ blockquote cite a:visited { color: #8B9798; border: none }
 
 /* Abbreviations */
 abbr {
-   font-family: 'opensans-bold', sans-serif;
+   font-family: 'Roboto', sans-serif;
 	font-variant: small-caps;
 	text-transform: lowercase;
    letter-spacing: .5px;
@@ -277,7 +275,7 @@ abbr:hover { cursor: help; }
 	margin: 0;
 	padding: 14px 6px 0 0;
 	font-size: 84px;
-	font-family: /* Copperplate */ 'opensans-bold', sans-serif;
+   font-family: 'Roboto', sans-serif;
    line-height: 60px;
 	text-indent: 0;
 	background: transparent;
@@ -348,7 +346,7 @@ li p { } */
 .stats-tabs li a {
 	display: inline-block;
 	font-size: 22px;
-	font-family: 'opensans-bold', sans-serif;
+	font-family: 'Roboto', sans-serif;
    border: none;
    color: #313131;
 }
@@ -359,7 +357,7 @@ li p { } */
 	display: block;
 	margin: 6px 0 0 0;
 	font-size: 13px;
-	font-family: 'opensans-regular', sans-serif;
+	font-family: 'Roboto', sans-serif;
    color: #8B9798;
 }
 
@@ -415,7 +413,7 @@ dd { margin: 0 0 0 20px; }
    padding: 0;
 }
 .pagination .page-numbers {
-   font: 15px/18px 'opensans-bold', sans-serif;
+   font: 15px/18px 'Roboto', sans-serif;
    display: inline-block;
    padding: 6px 10px;
    margin-right: 3px;
@@ -467,7 +465,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-   font: 16px/30px 'opensans-bold', sans-serif;
+   font: 16px/30px 'Roboto', sans-serif;
    background: #11ABB0;
    display: inline-block;
 	text-decoration: none;
@@ -569,7 +567,7 @@ textarea { min-height: 220px; }
 
 label,
 legend {
-   font: 16px/24px 'opensans-bold', sans-serif;
+   font: 16px/24px 'Roboto', sans-serif;
 	margin: 12px 0;
    color: #3d4145;
    display: block;
@@ -577,7 +575,7 @@ legend {
 label span,
 legend span {
 	color: #8B9798;
-   font: 14px/24px 'opensans-regular', sans-serif;
+   font: 14px/24px 'Roboto', sans-serif;
 }
 
 input[type="checkbox"],
@@ -660,6 +658,7 @@ h1,h2,h6{
  .fright{
    float: right;
    width: 25%;
+   margin-bottom: 10px;
  }
  
  /* Add any other necessary styling for your progress bars and text */

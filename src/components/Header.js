@@ -38,7 +38,7 @@ const Header = ({ resumeData }) => (
       <div className="row banner">
         <div className="banner-text">
           <h1 className="responsive-headline">I am {resumeData.name}.</h1>
-          <h3 style={{ color: '#fff', fontFamily: 'sans-serif ' }}>
+          <h3>
             {resumeData.roleDescription}
           </h3>
           <div className="text-center mt-4">
@@ -55,9 +55,7 @@ const Header = ({ resumeData }) => (
   <Button style={{ backgroundColor: '#99eade', color: '#0d0325', marginRight: '10px'}} onClick={() => (window.location.href = resumeData.cv)} className="btn btn-outline-info">
   Download CV
 </Button>
-
 </div>
-
           <hr />
           <ul className="social">
             {resumeData.socialLinks &&

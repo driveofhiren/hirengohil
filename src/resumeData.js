@@ -124,31 +124,39 @@ const resumeData = {
   "skills": [
     {
       "skillname": "HTML5/CSS",
-      "level": 80
-    },
-    {
-      "skillname": "Reactjs",
-      "level": 85
-    },
-    {
-      "skillname": "C++/C/C#",
       "level": 95
     },
     {
-      "skillname": "Java",
-      "level": 60
+      "skillname": "React.js",
+      "level": 80
     },
     {
-      "skillname": "SQL",
-      "level": 50
+      "skillname": "Python, Java, C++/C#",
+      "level":90
+    },
+    {
+      "skillname": "Node.js, Express.js",
+      "level": 80
+    },
+    {
+      "skillname": "Java",
+      "level": 80
+    },
+    {
+      "skillname": "SQL/MongoDB/Firebase",
+      "level": 90
+    },
+    {
+      "skillname": "GraphQL",
+      "level": 90
     },
     {
       "skillname": "PHP",
-      "level": 29
+      "level": 95
     },
     {
       "skillname": "ASP.NET",
-      "level": 70
+      "level": 80
     },
     {
       "skillname": "Adobe Photoshop",
@@ -164,15 +172,15 @@ const resumeData = {
     },
     {
       "skillname": "Adobe Premiere",
-      "level": 80
+      "level": 85
     },
     {
       "skillname": "Adobe Audition",
-      "level": 80
+      "level": 85
     },
     {
       "skillname": "Adobe After Effects",
-      "level": 65
+      "level": 80
     },
     {
       "skillname": "Microsoft Office Suit",
