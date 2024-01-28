@@ -33,14 +33,19 @@ const resumeData = {
     },
     {
       "name": "youtube",
-      "url": "https://www.youtube.com/spirittoy5420",
+      "url": "https://www.youtube.com/channel/UCRN6zHj_YuzDrH9qTw6FMIQ",
       "className": "fa fa-youtube"
     },
     {
       "name": "spotify",
       "url": "https://open.spotify.com/artist/4G4Ko6bMdUf1hADOhCkd4c",
       "className": "fa fa-spotify"
-    }
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/spirittoymusic/",
+      "className": "fa fa-instagram"
+    },
   ],
   
   "aboutme": "I'm Hiren Yogeshbhai Gohil, a tech enthusiast with a Bachelor's in Information & Technology from SVIT, Vasad, India, and currently pursuing Web Development at Conestoga College. I have a diverse background, having worked as a Technician, Graphic Designer, and Music Producer for multiple record labels. Let's innovate together!",
