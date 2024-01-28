@@ -598,7 +598,7 @@ input[type="checkbox"] { display: inline; }
 --------------------------------------------------------------- */
 .row {
    width: 96%;
-   max-width: 1020px;
+   /* max-width: 1020px; */
    margin: 0 auto;
 }
 /* fixed width for IE8 */
@@ -620,19 +620,14 @@ input[type="checkbox"] { display: inline; }
 
 .column, .columns {
    position: relative;
-   margin: 25px;
-   min-height: 1px;
-   float: left;
-}
-.columns1 {
-   position: relative;
-   margin: 20px 42px 5px 42px;
+   margin: 10px 55px 10px 55px;
    min-height: 1px;
    float: left;
 }
 .musicwidth{
    width: 42% !important;
 }
+
 .item-wrap:hover {
    box-shadow: 3px 3px 9px 1px rgba(0, 0, 0, 0.214); 
  }

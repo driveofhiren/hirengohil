@@ -20,7 +20,7 @@ export default class Porfolio extends Component {
             <div id="portfolio-wrapper" className="bgrid-quarters">
               {resumeData.portfolio &&
                 resumeData.portfolio.map((item, index) => (
-                  <div className="columns1 portfolio-item " key={index}>
+                  <div className="columns portfolio-item " key={index}>
                     <div className="item-wrap" style={{ backgroundColor: this.getRandomColor()  , borderRadius: '15px'} }>
                       <a href={item.imgurl}><div style={{ width: '220px', height: '100%', background: 'url(' + item.imgurl + ')', backgroundSize: 'cover' }}></div>
                         <div>
