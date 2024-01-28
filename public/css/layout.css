@@ -475,15 +475,17 @@ h1 span {
 .portfolio-item .item-wrap img {
    vertical-align: bottom;
 }
-.portfolio-item .portfolio-item-meta { padding: 18px ;}
+.portfolio-item .portfolio-item-meta { padding: 18px ; ;
+}
 .portfolio-item .portfolio-item-meta h5 {
+   text-shadow: 1px 1px 1px  rgba(187, 138, 138, 0.5);
    font-weight: 900 !important;
     font: 16px/21px 'Plus Jakarta Sans', sans-serif;
 }
 .portfolio-item .portfolio-item-meta p {
-   font: 12px/18px 'Plus Jakarta Sans', sans-serif;
-
-   color: #c6c7c7;
+   font: 15px 'Plus Jakarta Sans', sans-serif;
+   font-weight: 600;
+   color: #dcdcdc;
    margin-bottom: 0;
 }
 

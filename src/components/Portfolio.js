@@ -2,12 +2,19 @@ import React, { Component } from 'react';
 
 export default class Porfolio extends Component {
   getRandomColor() {
-    const getDarkComponent = () => Math.floor(Math.random() * 128); // Adjust this value as needed
-  
+    const getDarkComponent = () => Math.floor(Math.random() * 150);
     const color = `rgb(${getDarkComponent()}, ${getDarkComponent()}, ${getDarkComponent()})`;
-  
+    const brightness = this.calculateBrightness(color);
+    if (brightness < 10) {
+      return this.getRandomColor();
+    }  
     return color;
   }
+  calculateBrightness(color) {
+    const rgb = color.match(/\d+/g).map(Number);
+    return 0.209 * rgb[0] + 0.507 * rgb[1] + 0.124 * rgb[2];
+  }
+  
 
   render() {
     let resumeData = this.props.resumeData;

@@ -42,17 +42,17 @@ const Header = ({ resumeData }) => (
             {resumeData.roleDescription}
           </h3>
           <div className="text-center mt-4">
-  <Button style={{ background: '#01efac', color: '#0d0325', marginRight: '10px' }}>
+  <Button style={{ background: '#3399ff', color: '#0d0325', marginRight: '10px' }}>
     <a href={`mailto:${resumeData.email}`} style={{ textDecoration: 'none', color: 'inherit' }}>
       Email
     </a>
   </Button>
-  <Button style={{ background: '#01cbae', color: '#0d0325', marginRight: '10px' }}>
+  <Button style={{ background: '#6699ff', color: '#0d0325', marginRight: '10px' }}>
     <a href={`tel:${resumeData.phone}`} style={{ textDecoration: 'none', color: 'inherit' }}>
       Call
     </a>
   </Button>
-  <Button style={{ backgroundColor: '#99eade', color: '#0d0325', marginRight: '10px'}} onClick={() => (window.location.href = resumeData.cv)} className="btn btn-outline-info">
+  <Button style={{ backgroundColor: '#66ccff', color: '#0d0325', marginRight: '10px'}} onClick={() => (window.location.href = resumeData.cv)} className="btn btn-outline-info">
   Download CV
 </Button>
 </div>
