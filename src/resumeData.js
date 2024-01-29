@@ -144,10 +144,6 @@ const resumeData = {
       "level": 80
     },
     {
-      "skillname": "Java",
-      "level": 80
-    },
-    {
       "skillname": "SQL/MongoDB/Firebase",
       "level": 90
     },
