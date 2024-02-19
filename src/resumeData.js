@@ -9,42 +9,42 @@ const resumeData = {
     {
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/hiren-gohil-362356142/",
-      "className": "fa fa-linkedin"
+      "className": "fab fa-linkedin"
     },
     {
       "name": "github",
       "url": "https://github.com/driveofhiren",
-      "className": "fa fa-github"
+      "className": "fab fa-github"
     },
     {
       "name": "twitter",
       "url": "https://twitter.com/spirit_toy",
-      "className": "fa fa-twitter"
+      "className": "fab fa-twitter"
     },
     {
       "name": "instagram",
       "url": "https://www.instagram.com/h.gohil/",
-      "className": "fa fa-instagram"
+      "className": "fab fa-instagram"
     },
     {
       "name": "soundcloud",
       "url": "https://soundcloud.com/spirittoy",
-      "className": "fa fa-soundcloud"
+      "className": "fab fa-soundcloud"
     },
     {
       "name": "youtube",
       "url": "https://www.youtube.com/channel/UCRN6zHj_YuzDrH9qTw6FMIQ",
-      "className": "fa fa-youtube"
+      "className": "fab fa-youtube"
     },
     {
       "name": "spotify",
       "url": "https://open.spotify.com/artist/4G4Ko6bMdUf1hADOhCkd4c",
-      "className": "fa fa-spotify"
+      "className": "fab fa-spotify"
     },
     {
       "name": "instagram",
       "url": "https://www.instagram.com/spirittoymusic/",
-      "className": "fa fa-instagram"
+      "className": "fab fa-instagram"
     },
   ],
   

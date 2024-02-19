@@ -22,7 +22,8 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #000000; }
+body { background-image: url("../images/portfoliocover.png"); 
+background-size: contain;}
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles

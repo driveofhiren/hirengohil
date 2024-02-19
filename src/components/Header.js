@@ -61,7 +61,7 @@ const Header = ({ resumeData }) => (
             {resumeData.socialLinks &&
               resumeData.socialLinks.map((item) => (
                 <li key={item.name}>
-                  <a href={item.url} target="_blank" rel="noreferrer">
+                  <a href={item.url}>
                     <i className={item.className}></i>
                   </a>
                 </li>
