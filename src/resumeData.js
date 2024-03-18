@@ -215,6 +215,11 @@ const resumeData = {
       "imgurl": "https://github.com/driveofhiren/Book-Store"
     },
     {
+      "name": "Multiplayer Card Game",
+      "description": "React and Node.js",
+      "imgurl": "https://github.com/driveofhiren/cardgame"
+    },
+    {
       "name": "Database design Car Services",
       "description": "Database",
       "imgurl": "https://github.com/driveofhiren/project-car-services"
