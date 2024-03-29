@@ -1,20 +1,8 @@
 import React, { Component } from 'react';
 
 export default class Porfolio extends Component {
-  getRandomColor() {
-    const getDarkComponent = () => Math.floor(Math.random() * 150);
-    const color = `rgb(${getDarkComponent()}, ${getDarkComponent()}, ${getDarkComponent()})`;
-    const brightness = this.calculateBrightness(color);
-    if (brightness < 10) {
-      return this.getRandomColor();
-    }  
-    return color;
-  }
-  calculateBrightness(color) {
-    const rgb = color.match(/\d+/g).map(Number);
-    return 0.209 * rgb[0] + 0.507 * rgb[1] + 0.124 * rgb[2];
-  }
-  
+
+
 
   render() {
     let resumeData = this.props.resumeData;
@@ -28,12 +16,15 @@ export default class Porfolio extends Component {
               {resumeData.portfolio &&
                 resumeData.portfolio.map((item, index) => (
                   <div className="columns portfolio-item " key={index}>
-                    <div className="item-wrap" style={{ backgroundColor: this.getRandomColor()  , borderRadius: '15px'} }>
+                    <div className="item-wrap" style={{ backgroundColor: '#1E90FF'  , borderRadius: '15px'} }>
                       <a href={item.imgurl}><div style={{ width: '220px', height: '100%', background: 'url(' + item.imgurl + ')', backgroundSize: 'cover' }}></div>
                         <div>
                           <div className="portfolio-item-meta">
-                            <h5>{item.name}</h5>
-                            <p>{item.description}</p>
+                            <h5 style={{ color: "black", fontWeight: "bold" }}>
+                              {item.name}
+                            </h5>
+
+                            <p style={{ color: "black" }}>{item.description}</p>
                           </div>
                         </div>
                       </a>

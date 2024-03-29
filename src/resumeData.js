@@ -1,5 +1,5 @@
 const resumeData = {
-  "imagebaseurl": "https://rbhatia46.github.io/",
+  "imagebaseurl": "https://driveofhiren.github.io/",
   "name": "Hiren Gohil",
   "role": "Web Developer, Music Producer, Graphic Designer",
   "skypeid": "Your skypeid",
@@ -226,22 +226,22 @@ const resumeData = {
     },
     {
       "name": "Budget Web application",
-      "description": "Simple budget Analysis",
+      "description": "JavaScript",
       "imgurl": "https://github.com/driveofhiren/Budget-Application"
     },
     {
       "name": "Cosmetics Website",
-      "description": "E-Commerce",
+      "description": "HTML/CSS",
       "imgurl": "https://github.com/driveofhiren/Cosmeticd"
     },
     {
       "name": "Bakery Website",
-      "description": "E-Commerce",
+      "description": "HTML/CSS",
       "imgurl": "https://github.com/driveofhiren/bakery"
     },
     {
-      "name": "Artist Website",
-      "description": "Musical Artist website",
+      "name": "Musicial Artist Website",
+      "description": "HTML/CSS",
       "imgurl": "https://github.com/driveofhiren/Artist-Website"
     }
   ],
