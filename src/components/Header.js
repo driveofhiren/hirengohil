@@ -53,7 +53,7 @@ const Header = ({ resumeData }) => (
     </a>
   </Button>
   <Button style={{ backgroundColor: '#66ccff', color: '#0d0325', marginRight: '10px'}} onClick={() => (window.location.href = resumeData.cv)} className="btn btn-outline-info">
-  Download CV
+  My Resume 
 </Button>
 </div>
           <hr />
