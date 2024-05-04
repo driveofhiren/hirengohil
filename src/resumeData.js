@@ -197,7 +197,7 @@ const resumeData = {
 		},
 		{
 			name: 'Employee Management System',
-			description: 'React and Mysql',
+			description: 'React/Mysql',
 			imgurl: 'https://github.com/driveofhiren/ems',
 		},
 		{
@@ -211,12 +211,12 @@ const resumeData = {
 			imgurl: 'https://github.com/driveofhiren/Book-Store',
 		},
 		{
-			name: 'Multiplayer Card Game',
-			description: 'React and Node.js',
+			name: 'Online Multiplayer Card Game',
+			description: 'React.js/Node.js',
 			imgurl: 'https://github.com/driveofhiren/cardgame',
 		},
 		{
-			name: 'Database design Car Services',
+			name: 'Database Design Car Services',
 			description: 'Database',
 			imgurl: 'https://github.com/driveofhiren/project-car-services',
 		},
