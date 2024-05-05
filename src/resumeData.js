@@ -5,7 +5,7 @@ const resumeData = {
 	skypeid: 'Your skypeid',
 	cv: 'https://drive.google.com/file/d/1s5KAkCp5Oa4t-nz1BMXVxuhjjgk1nfXF/view?usp=drive_link',
 	roleDescription:
-		'I am a skilled professional, adept in the realms of web development, music production, and graphic design, seamlessly blending my creative instincts with technical expertise.',
+		'I am a skilled professional, adept in the realms of Web development, Music production, and Graphic design, seamlessly blending my creative instincts with technical expertise.',
 	socialLinks: [
 		{
 			name: 'linkedin',
@@ -65,7 +65,7 @@ const resumeData = {
 			UniversityName: 'Conestoga College',
 			specialization: 'Web Development',
 			MonthOfPassing: 'April',
-			YearOfPassing: '2023',
+			YearOfPassing: '2024',
 			Achievements: '3.67 GPA',
 		},
 		{
