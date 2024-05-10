@@ -243,7 +243,7 @@ const resumeData = {
 		{
 			name: 'Astrology Community App(*)',
 			description: 'React.js/Node.js',
-			imgurl: '',
+			imgurl: 'https://github.com/driveofhiren',
 		},
 	],
 	music: [
