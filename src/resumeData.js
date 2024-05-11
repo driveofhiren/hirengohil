@@ -183,9 +183,8 @@ const resumeData = {
 			imgurl: 'https://github.com/driveofhiren',
 		},
 		{
-			name: 'ShiftTime(Capstone)',
-			description:
-				'Shift Schedule Application (React.js/Node.js/Flutter)',
+			name: 'ShiftTime(Shift Schedule Application)',
+			description: 'React.js/Node.js/Flutter',
 			imgurl: 'https://github.com/ankit-maniya/be-shifttime',
 		},
 		{
