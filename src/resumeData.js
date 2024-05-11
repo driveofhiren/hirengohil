@@ -124,7 +124,7 @@ const resumeData = {
 	skillsDescription: 'Your skills here',
 	skills: [
 		{
-			skillname: 'HTML5/CSS',
+			skillname: 'HTML5/CSS/Tailwind',
 			level: 95,
 		},
 		{
@@ -132,31 +132,23 @@ const resumeData = {
 			level: 80,
 		},
 		{
-			skillname: 'Python, Java, C++/C#',
+			skillname: 'Python, Java, C++,C#',
 			level: 90,
 		},
 		{
-			skillname: 'Node.js, Express.js',
+			skillname: 'Node.js, Express.js, PHP',
 			level: 80,
 		},
 		{
-			skillname: 'SQL/MongoDB/Firebase',
+			skillname: 'SQL, MongoDB, Firebase, GraphQL',
 			level: 90,
-		},
-		{
-			skillname: 'GraphQL',
-			level: 90,
-		},
-		{
-			skillname: 'PHP',
-			level: 95,
 		},
 		{
 			skillname: 'ASP.NET',
 			level: 80,
 		},
 		{
-			skillname: 'Adobe Photoshop',
+			skillname: 'Adobe Photoshop, Figma',
 			level: 90,
 		},
 		{
@@ -186,29 +178,15 @@ const resumeData = {
 	],
 	portfolio: [
 		{
-			name: 'Tesla Mobile',
-			description: 'Web design',
-			imgurl: 'https://github.com/driveofhiren/tesla-mobile-web-design',
+			name: 'Astrology Community App(*)',
+			description: 'React.js/Node.js',
+			imgurl: 'https://github.com/driveofhiren',
 		},
 		{
-			name: 'Toronto Tourism',
-			description: 'Web Design',
-			imgurl: 'https://github.com/driveofhiren/toronto',
-		},
-		{
-			name: 'Employee Management System',
-			description: 'React/Mysql',
-			imgurl: 'https://github.com/driveofhiren/ems',
-		},
-		{
-			name: 'Desk E-commerce Application',
-			description: 'PHP',
-			imgurl: 'https://github.com/driveofhiren/ecomphp',
-		},
-		{
-			name: 'Book Store',
-			description: 'ASP.NET',
-			imgurl: 'https://github.com/driveofhiren/Book-Store',
+			name: 'ShiftTime(Capstone)',
+			description:
+				'Shift Schedule Application (React.js/Node.js/Flutter)',
+			imgurl: 'https://github.com/ankit-maniya/be-shifttime',
 		},
 		{
 			name: 'Online Multiplayer Card Game',
@@ -216,14 +194,14 @@ const resumeData = {
 			imgurl: 'https://github.com/driveofhiren/cardgame',
 		},
 		{
-			name: 'Database Design Car Services',
-			description: 'Database',
-			imgurl: 'https://github.com/driveofhiren/project-car-services',
+			name: 'Tesla Mobile',
+			description: 'HiFi Design',
+			imgurl: 'https://github.com/driveofhiren/tesla-mobile-web-design',
 		},
 		{
-			name: 'Budget Web application',
-			description: 'JavaScript',
-			imgurl: 'https://github.com/driveofhiren/Budget-Application',
+			name: 'Toronto Tourism',
+			description: 'HiFi Design',
+			imgurl: 'https://github.com/driveofhiren/toronto',
 		},
 		{
 			name: 'Cosmetics Website',
@@ -241,9 +219,24 @@ const resumeData = {
 			imgurl: 'https://github.com/driveofhiren/Artist-Website',
 		},
 		{
-			name: 'Astrology Community App(*)',
-			description: 'React.js/Node.js',
-			imgurl: 'https://github.com/driveofhiren',
+			name: 'Employee Management System',
+			description: 'React/Mysql',
+			imgurl: 'https://github.com/driveofhiren/ems',
+		},
+		{
+			name: 'E-commerce Application',
+			description: 'PHP',
+			imgurl: 'https://github.com/driveofhiren/ecomphp',
+		},
+		{
+			name: 'Book Store',
+			description: 'ASP.NET',
+			imgurl: 'https://github.com/driveofhiren/Book-Store',
+		},
+		{
+			name: 'Budget Web application',
+			description: 'JavaScript',
+			imgurl: 'https://github.com/driveofhiren/Budget-Application',
 		},
 	],
 	music: [
