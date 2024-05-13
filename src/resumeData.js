@@ -185,7 +185,7 @@ const resumeData = {
 		{
 			name: 'ShiftTime(Shift Schedule Application)',
 			description: 'React.js/Node.js/Flutter',
-			imgurl: 'https://github.com/ankit-maniya/be-shifttime',
+			imgurl: 'https://shifttime.vercel.app/',
 		},
 		{
 			name: 'Online Multiplayer Card Game',
