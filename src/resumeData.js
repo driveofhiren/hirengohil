@@ -178,7 +178,7 @@ const resumeData = {
 	],
 	portfolio: [
 		{
-			name: 'Astrology Community App(*)',
+			name: 'Cosmos Community App(*)',
 			description: 'React.js/Node.js',
 			imgurl: 'https://github.com/driveofhiren',
 		},
