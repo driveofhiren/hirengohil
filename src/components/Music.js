@@ -5,7 +5,7 @@ export default class Music extends Component {
 	render() {
 		let resumeData = this.props.resumeData
 		return (
-			<section id="music">
+			<section id="productions">
 				<div className="row">
 					<div>
 						<h1>
@@ -40,8 +40,23 @@ export default class Music extends Component {
 									)
 								})}
 						</div>
+
 						<h1>
-							<span>Listen whole Discography</span>
+							<span>Videos</span>
+						</h1>
+						<div class="player-container">
+							<iframe
+								width="70%"
+								height="450px"
+								src="https://www.youtube.com/embed/videoseries?si=jh1EqnRja0KYdLbh&list=PL1t6M0BZsk-SQUiaJHuA74pafr0Szq2NZ"
+								title="Spirit Toy Music"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+							></iframe>
+						</div>
+						<h1>
+							<span>Discography</span>
 						</h1>
 						<div class="player-container">
 							<iframe
@@ -64,21 +79,7 @@ export default class Music extends Component {
 							</div>
 						</div>
 						<h1>
-							<span>Videos</span>
-						</h1>
-						<div class="player-container">
-							<iframe
-								width="70%"
-								height="450px"
-								src="https://www.youtube.com/embed/videoseries?si=jh1EqnRja0KYdLbh&list=PL1t6M0BZsk-SQUiaJHuA74pafr0Szq2NZ"
-								title="Spirit Toy Music"
-								frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								allowfullscreen
-							></iframe>
-						</div>
-						<h1>
-							<span>Artist Radio</span>
+							<span>Radio</span>
 						</h1>
 						<div className="player-container">
 							<iframe

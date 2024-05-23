@@ -4,7 +4,7 @@ export default class Resume extends Component {
 	render() {
 		let resumeData = this.props.resumeData
 		return (
-			<section id="resume" style={{ backgroundColor: 'black' }}>
+			<section id="skills" style={{ backgroundColor: 'black' }}>
 				<div className="container">
 					<div className="row skill">
 						<div className="col-md-3">

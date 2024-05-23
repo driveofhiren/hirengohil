@@ -2,7 +2,6 @@ const resumeData = {
 	imagebaseurl: 'https://driveofhiren.github.io/',
 	name: 'Hiren Gohil',
 	role: 'Web Developer, Music Producer, Graphic Designer',
-	skypeid: 'Your skypeid',
 	cv: 'https://drive.google.com/file/d/1s5KAkCp5Oa4t-nz1BMXVxuhjjgk1nfXF/view?usp=drive_link',
 	roleDescription:
 		'I am a skilled professional, adept in the realms of Web development, Music production, and Graphic design, seamlessly blending my creative instincts with technical expertise.',
@@ -51,7 +50,7 @@ const resumeData = {
 
 	aboutme:
 		"I'm Hiren Yogeshbhai Gohil, a tech enthusiast with a Bachelor's in Information & Technology from SVIT, Vasad, India, and currently pursuing Web Development at Conestoga College. I have a diverse background, having worked as a Technician, Graphic Designer, and Music Producer for multiple record labels. Let's innovate together!",
-	address: 'F-307 275 Larch St, Waterloo, ON N2L 3R2, CA',
+
 	email: 'hirengohil7792@gmail.com',
 	phone: '+1-437-799-3689',
 	instagramId: 'h.gohil',
@@ -59,35 +58,20 @@ const resumeData = {
 	youtubeId: '@spirittoy5420',
 	linkedinId: 'hiren-gohil-362356142',
 	spotifyId: '4G4Ko6bMdUf1hADOhCkd4c',
-	website: '',
 	education: [
 		{
 			UniversityName: 'Conestoga College',
-			specialization: 'Web Development',
+			specialization: 'Web Development(Post Graduation)',
 			MonthOfPassing: 'April',
 			YearOfPassing: '2024',
 			Achievements: '3.67 GPA',
 		},
 		{
 			UniversityName: 'SVIT, Vasad',
-			specialization: 'Information & Technology',
+			specialization: 'Information & Technology(Bachelors)',
 			MonthOfPassing: 'July',
 			YearOfPassing: '2020',
 			Achievements: '3.12 GPA',
-		},
-		{
-			UniversityName: 'ST John School',
-			specialization: 'SSC',
-			MonthOfPassing: 'Year',
-			YearOfPassing: '2014',
-			Achievements: '',
-		},
-		{
-			UniversityName: 'Zenith High School',
-			specialization: 'HSC',
-			MonthOfPassing: 'Year',
-			YearOfPassing: '2016',
-			Achievements: '',
 		},
 	],
 	work: [
@@ -99,25 +83,10 @@ const resumeData = {
 			Achievements: '',
 		},
 		{
-			CompanyName: 'National/College Level Tech-Fest',
-			specialization: 'Graphic Designer',
-			MonthOfLeaving: 'Feb',
-			YearOfLeaving: '2019',
-			Achievements:
-				'I served as a Graphic Designer for National and College-level Tech-Fests from 2017 to 2019, where I crafted visually compelling designs, including posters, cards, brochures, certificates, and various documents, to enhance the overall aesthetic and communication of the events.',
-		},
-		{
 			CompanyName: 'Numerator',
 			specialization: 'Data Classification Associate',
-			MonthOfLeaving: 'Present',
-			YearOfLeaving: '',
-			Achievements: '50+ WPM Speed',
-		},
-		{
-			CompanyName: 'Popeyes, Aunty’s Kitchen',
-			specialization: 'Cook',
-			MonthOfLeaving: 'Present',
-			YearOfLeaving: '',
+			MonthOfLeaving: 'Dec',
+			YearOfLeaving: '2022',
 			Achievements: '',
 		},
 	],
@@ -125,57 +94,101 @@ const resumeData = {
 	skills: [
 		{
 			skillname: 'HTML5/CSS/Tailwind',
-			level: 95,
 		},
 		{
 			skillname: 'React.js',
-			level: 80,
 		},
 		{
 			skillname: 'Python, Java, C++,C#',
-			level: 90,
 		},
 		{
 			skillname: 'Node.js, Express.js, PHP',
-			level: 80,
 		},
 		{
 			skillname: 'SQL, MongoDB, Firebase, GraphQL',
-			level: 90,
 		},
 		{
 			skillname: 'ASP.NET',
-			level: 80,
 		},
 		{
 			skillname: 'Adobe Photoshop, Figma',
-			level: 90,
 		},
 		{
 			skillname: 'Adobe Illustrator',
-			level: 85,
 		},
 		{
 			skillname: 'FL Studio',
-			level: 95,
 		},
 		{
 			skillname: 'Adobe Premiere',
-			level: 85,
 		},
 		{
 			skillname: 'Adobe Audition',
-			level: 85,
 		},
 		{
 			skillname: 'Adobe After Effects',
-			level: 80,
 		},
 		{
 			skillname: 'Microsoft Office Suit',
-			level: 85,
 		},
 	],
+	graphics: [
+		{
+			id: 1,
+			name: 'Logo Design',
+			embedUrl:
+				'https://drive.google.com/file/d/1gnxy-uHS6KrxPwCJrLqmLTa6ElLDctx3/preview',
+		},
+		{
+			id: 2,
+			name: 'Logo Design',
+			embedUrl:
+				'https://drive.google.com/file/d/1gn_xnRGnYiTA6gBVTB0wWMMkRD0DTzIt/preview',
+		},
+		{
+			id: 3,
+			name: 'Logo Design',
+			embedUrl:
+				'https://drive.google.com/file/d/1glxQnF9Tp_jlLzn310kX3S_MlZ9W_wi9/preview',
+		},
+		{
+			id: 4,
+			name: 'Artworks',
+			embedUrl:
+				'https://drive.google.com/file/d/1hBiHf-3phXVvkWwG2ZUEqv8UG_q7MYz2/preview',
+		},
+		{
+			id: 5,
+			name: 'Artworks',
+			embedUrl:
+				'https://drive.google.com/file/d/1h1O14YQcuFMYV63mOKomqV8mhDz5Phba/preview',
+		},
+		{
+			id: 6,
+			name: 'Logo Design',
+			embedUrl:
+				'https://drive.google.com/file/d/1hF3NsGCkmTV-6eBhbTHPOM_xmn-AQtOy/preview',
+		},
+		{
+			id: 7,
+			name: 'Cover Photo',
+			embedUrl:
+				'https://drive.google.com/file/d/1gtsRZW8wwUHCLkFaF-oolCotVEm4laKv/preview',
+		},
+		{
+			id: 8,
+			name: 'Cover Photo',
+			embedUrl:
+				'https://drive.google.com/file/d/1h22C035Jjy14ydvfNbqJmKl5jqvaKsoM/preview',
+		},
+		{
+			id: 9,
+			name: 'Logo Design',
+			embedUrl:
+				'https://drive.google.com/file/d/1gq0l9yj-shf3LhpMEoZbf4aBiGeqK0on/preview',
+		},
+	],
+
 	portfolio: [
 		{
 			name: 'Cosmos Community App(*)',
@@ -188,7 +201,7 @@ const resumeData = {
 			imgurl: 'https://shifttime.vercel.app/',
 		},
 		{
-			name: 'Online Multiplayer Card Game',
+			name: 'Online Multiplayer Card Game(235)',
 			description: 'React.js/Node.js',
 			imgurl: 'https://github.com/driveofhiren/cardgame',
 		},
@@ -242,48 +255,32 @@ const resumeData = {
 		{
 			id: 1,
 			name: 'Mahiya',
-			description: 'Description for Track 1',
 			imgurl: 'https://open.spotify.com/album/3OVfehhI2muqHQIc4r3wae?si=sfi7XUhiRi2k0kPKp_-dpA',
 		},
 		{
 			id: 2,
 			name: 'Masters',
-			description: 'Description for Track 2',
 			imgurl: 'https://open.spotify.com/track/1YzO9G2ubLqj6tBjWfY2jG?si=a337a283b9fe4298',
 		},
 		{
 			id: 3,
-			name: 'Masters 2',
-			description: 'Description for Track 1',
+			name: 'Masters(Slowed and Reverb)',
 			imgurl: 'https://open.spotify.com/track/49XBPjiXJqMNTtPhZIclwR?si=623fedc5d7524d9e',
 		},
 		{
 			id: 4,
 			name: 'Tranquil',
-			description: 'Description for Track 2',
 			imgurl: 'https://open.spotify.com/track/0kY03hvGKov6olyWyg7wey?si=e8457e29a63149ae',
 		},
 		{
 			id: 5,
 			name: 'Ashle',
-			description: 'Description for Track 1',
 			imgurl: 'https://open.spotify.com/track/6ct4xQaoDpwIlJuKtvVcCL',
 		},
 		{
 			id: 6,
 			name: 'Osho Wave',
-			description: 'Description for Track 2',
 			imgurl: 'https://open.spotify.com/album/20j9Vc4dMVlP3cyabv14D1?si=9i59uigKQVazTvNjm3q7jw',
-		},
-	],
-	testimonials: [
-		{
-			description: 'This is a sample testimonial',
-			name: 'Some technical guy',
-		},
-		{
-			description: 'This is a sample testimonial',
-			name: 'Some technical guy',
 		},
 	],
 }

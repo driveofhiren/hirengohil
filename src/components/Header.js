@@ -22,18 +22,23 @@ const Header = ({ resumeData }) => (
 						</a>
 					</li>
 					<li>
-						<a className="smoothscroll" href="#resume">
+						<a className="smoothscroll" href="#skills">
 							Skills
 						</a>
 					</li>
 					<li>
-						<a className="smoothscroll" href="#portfolio">
+						<a className="smoothscroll" href="#projects">
 							Projects
 						</a>
 					</li>
 					<li>
-						<a className="smoothscroll" href="#music">
-							Music
+						<a className="smoothscroll" href="#graphics">
+							Graphics
+						</a>
+					</li>
+					<li>
+						<a className="smoothscroll" href="#productions">
+							Productions
 						</a>
 					</li>
 				</ul>
