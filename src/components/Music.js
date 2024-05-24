@@ -29,11 +29,11 @@ export default class Music extends Component {
 														wide
 														link={item.imgurl}
 													/>
-													<div className="overlay ">
+													{/* <div className="overlay ">
 														<div className="music-item-meta center-block">
 															<h6>{item.name}</h6>
 														</div>
-													</div>
+													</div> */}
 												</a>
 											</div>
 										</div>

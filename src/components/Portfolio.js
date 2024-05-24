@@ -5,7 +5,7 @@ export default class Porfolio extends Component {
 		let resumeData = this.props.resumeData
 
 		return (
-			<section id="projects" style={{ backgroundColor: 'Black' }}>
+			<section id="projects">
 				<div className="row">
 					<div className="rcon">
 						<h1>
@@ -21,39 +21,25 @@ export default class Porfolio extends Component {
 										<div
 											className="item-wrap"
 											style={{
-												backgroundColor: '#1E90FF',
-												borderRadius: '15px',
+												backgroundColor: '#000080',
+												//add border white
+												border: '1px solid #290066',
+
+												borderRadius: '8px',
 											}}
 										>
 											<a href={item.imgurl}>
-												<div
-													style={{
-														width: '220px',
-														height: '100%',
-														background:
-															'url(' +
-															item.imgurl +
-															')',
-														backgroundSize: 'cover',
-													}}
-												></div>
 												<div>
 													<div className="portfolio-item-meta">
 														<h5
 															style={{
-																color: 'black',
-																fontWeight:
-																	'bold',
+																color: '#EBEBF2',
 															}}
 														>
 															{item.name}
 														</h5>
 
-														<p
-															style={{
-																color: 'black',
-															}}
-														>
+														<p style={{}}>
 															{item.description}
 														</p>
 													</div>

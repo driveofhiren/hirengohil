@@ -96,7 +96,7 @@ const resumeData = {
 			skillname: 'HTML5/CSS/Tailwind',
 		},
 		{
-			skillname: 'React.js',
+			skillname: 'React.js/ASP.NET',
 		},
 		{
 			skillname: 'Python, Java, C++,C#',
@@ -106,9 +106,6 @@ const resumeData = {
 		},
 		{
 			skillname: 'SQL, MongoDB, Firebase, GraphQL',
-		},
-		{
-			skillname: 'ASP.NET',
 		},
 		{
 			skillname: 'Adobe Photoshop, Figma',

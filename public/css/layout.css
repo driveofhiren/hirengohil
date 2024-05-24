@@ -198,7 +198,8 @@ ul#nav li a:active {
 	background-color: transparent !important;
 }
 ul#nav li.current a {
-	color: rgb(51, 153, 255);
+	color: #0000e6;
+	font-size: larger;
 }
 
 /* ------------------------------------------------------------------ */
@@ -318,17 +319,6 @@ h1 span {
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
-
-.bars {
-	width: 95%;
-	float: left;
-	padding: 0;
-	text-align: left;
-}
-.bars .skills {
-	margin-top: 36px;
-	list-style: none;
-}
 .bars li {
 	position: relative;
 	margin-bottom: 60px;
@@ -491,12 +481,15 @@ h1 span {
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
-
 #projects,
-#skills,
+#skill,
 #music,
 #productions,
 #graphics {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#skills {
 	padding-top: 50px;
 }
 
@@ -570,14 +563,15 @@ h1 span {
 	padding: 18px;
 }
 .portfolio-item .portfolio-item-meta h5 {
-	text-shadow: 1px 1px 1px rgba(187, 138, 138, 0.5);
-	font-weight: 900 !important;
-	font: 16px/21px 'Plus Jakarta Sans', sans-serif;
+	font-size: larger;
+	font: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 500;
+	text-align: left;
+	color: white;
 }
 .portfolio-item .portfolio-item-meta p {
-	font: 15px 'Plus Jakarta Sans', sans-serif;
-	font-weight: 600;
-	color: #dcdcdc;
+	font-size: medium;
+	color: #dcd9ff;
 	margin-bottom: 0;
 }
 

@@ -53,8 +53,8 @@ const Header = ({ resumeData }) => (
 					<div className="text-center mt-4">
 						<Button
 							style={{
-								background: '#3399ff',
-								color: '#0d0325',
+								background: '#000080',
+								color: '#ffffff',
 								marginRight: '10px',
 							}}
 						>
@@ -70,7 +70,7 @@ const Header = ({ resumeData }) => (
 						</Button>
 						<Button
 							style={{
-								background: '#6699ff',
+								background: '#0000b3',
 								color: '#0d0325',
 								marginRight: '10px',
 							}}
@@ -87,7 +87,7 @@ const Header = ({ resumeData }) => (
 						</Button>
 						<Button
 							style={{
-								backgroundColor: '#66ccff',
+								backgroundColor: '#0000e6',
 								color: '#0d0325',
 								marginRight: '10px',
 							}}

@@ -63,7 +63,7 @@ export default class Graphics extends Component {
 												></iframe>
 												<div className="overlay">
 													<div className="graphics-item-meta center-block">
-														<h6>{item.name}</h6>
+														<h5>{item.name} </h5>
 													</div>
 												</div>
 											</div>
