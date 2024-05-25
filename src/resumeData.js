@@ -131,12 +131,6 @@ const resumeData = {
 	],
 	graphics: [
 		{
-			id: 1,
-			name: 'Logo',
-			embedUrl:
-				'https://drive.google.com/file/d/1gnxy-uHS6KrxPwCJrLqmLTa6ElLDctx3/preview',
-		},
-		{
 			id: 2,
 			name: 'Logo',
 			embedUrl:
@@ -149,10 +143,16 @@ const resumeData = {
 				'https://drive.google.com/file/d/1glxQnF9Tp_jlLzn310kX3S_MlZ9W_wi9/preview',
 		},
 		{
-			id: 6,
+			id: 1,
 			name: 'Logo',
 			embedUrl:
 				'https://drive.google.com/file/d/1hF3NsGCkmTV-6eBhbTHPOM_xmn-AQtOy/preview',
+		},
+		{
+			id: 6,
+			name: 'Logo',
+			embedUrl:
+				'https://drive.google.com/file/d/1gnxy-uHS6KrxPwCJrLqmLTa6ElLDctx3/preview',
 		},
 		{
 			id: 9,
