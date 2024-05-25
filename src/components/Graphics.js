@@ -85,7 +85,9 @@ export default class Graphics extends Component {
 										<div
 											className="columns graphics-item"
 											key={item.id}
-											style={{ padding: '10px' }}
+											style={{
+												padding: '10px',
+											}}
 										>
 											<div className="item-wrap">
 												<LazyLoadIframe

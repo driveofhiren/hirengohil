@@ -24,17 +24,15 @@ export default class Music extends Component {
 											style={{ width: '45%' }}
 										>
 											<div className="item-wrap ">
-												<a>
-													<Spotify
-														wide
-														link={item.imgurl}
-													/>
-													{/* <div className="overlay ">
+												<Spotify
+													wide
+													link={item.imgurl}
+												/>
+												{/* <div className="overlay ">
                                                         <div className="music-item-meta center-block">
                                                             <h6>{item.name}</h6>
                                                         </div>
                                                     </div> */}
-												</a>
 											</div>
 										</div>
 									)
