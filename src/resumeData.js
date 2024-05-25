@@ -132,21 +132,33 @@ const resumeData = {
 	graphics: [
 		{
 			id: 1,
-			name: 'Logo Design',
+			name: 'Logo',
 			embedUrl:
 				'https://drive.google.com/file/d/1gnxy-uHS6KrxPwCJrLqmLTa6ElLDctx3/preview',
 		},
 		{
 			id: 2,
-			name: 'Logo Design',
+			name: 'Logo',
 			embedUrl:
 				'https://drive.google.com/file/d/1gn_xnRGnYiTA6gBVTB0wWMMkRD0DTzIt/preview',
 		},
 		{
 			id: 3,
-			name: 'Logo Design',
+			name: 'Logo',
 			embedUrl:
 				'https://drive.google.com/file/d/1glxQnF9Tp_jlLzn310kX3S_MlZ9W_wi9/preview',
+		},
+		{
+			id: 6,
+			name: 'Logo',
+			embedUrl:
+				'https://drive.google.com/file/d/1hF3NsGCkmTV-6eBhbTHPOM_xmn-AQtOy/preview',
+		},
+		{
+			id: 9,
+			name: 'Logo',
+			embedUrl:
+				'https://drive.google.com/file/d/1gq0l9yj-shf3LhpMEoZbf4aBiGeqK0on/preview',
 		},
 		{
 			id: 4,
@@ -161,12 +173,6 @@ const resumeData = {
 				'https://drive.google.com/file/d/1h1O14YQcuFMYV63mOKomqV8mhDz5Phba/preview',
 		},
 		{
-			id: 6,
-			name: 'Logo Design',
-			embedUrl:
-				'https://drive.google.com/file/d/1hF3NsGCkmTV-6eBhbTHPOM_xmn-AQtOy/preview',
-		},
-		{
 			id: 7,
 			name: 'Cover Photo',
 			embedUrl:
@@ -179,10 +185,40 @@ const resumeData = {
 				'https://drive.google.com/file/d/1h22C035Jjy14ydvfNbqJmKl5jqvaKsoM/preview',
 		},
 		{
-			id: 9,
-			name: 'Logo Design',
+			id: 10,
+			name: 'T Shirt Mock up',
 			embedUrl:
-				'https://drive.google.com/file/d/1gq0l9yj-shf3LhpMEoZbf4aBiGeqK0on/preview',
+				'https://drive.google.com/file/d/1hk7K0fRMgHpoiP0wpfoH5s-2vHGBueof/preview',
+		},
+		{
+			id: 11,
+			name: 'Momento Design',
+			embedUrl:
+				'https://drive.google.com/file/d/1hYTif0A-AEUD4kVQPT7-lhYvB-IX5r7e/preview',
+		},
+		{
+			id: 12,
+			name: 'Certificate',
+			embedUrl:
+				'https://drive.google.com/file/d/1hNX89ibxbYq1hEl6C_0rPHMxSmyQsyq7/preview',
+		},
+		{
+			id: 13,
+			name: 'ID Card',
+			embedUrl:
+				'https://drive.google.com/file/d/1hsYdYl14YfFSJs-GDAsNzrEesyo26JgD/preview',
+		},
+		{
+			id: 14,
+			name: 'Poster',
+			embedUrl:
+				'https://drive.google.com/file/d/1huov-4qK6j6naRMjjizDX1gJYlS8WM-s/preview',
+		},
+		{
+			id: 15,
+			name: 'Welcome Banner',
+			embedUrl:
+				'"https://drive.google.com/file/d/1hw1z0QfjP4URgDbt23ed9UKJ486uWZ4V/preview',
 		},
 	],
 
