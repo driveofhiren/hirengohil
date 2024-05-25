@@ -11,19 +11,19 @@ export default class Resume extends Component {
 							<span>Skills</span>
 						</h1>
 					</div>
-				</section>
-				<section id="skill" style={{ backgroundColor: '#00004d' }}>
-					<div className="container">
-						<div className="row skill">
-							<div className="skills-container">
-								{resumeData.skills.map((item) => (
-									<div
-										key={item.skillname}
-										className="col-lg-3"
-									>
-										<div className="skill-item fright">
-											{item.skillname}
-											{/* <div className="progress">
+
+					<section id="skill" style={{ backgroundColor: '#00004d' }}>
+						<div className="container">
+							<div className="row skill">
+								<div className="skills-container">
+									{resumeData.skills.map((item) => (
+										<div
+											key={item.skillname}
+											className="col-lg-3"
+										>
+											<div className="skill-item fright">
+												{item.skillname}
+												{/* <div className="progress">
 <div
 className="progress-bar"
 style={{
@@ -34,12 +34,13 @@ backgroundColor: this.getBackgroundColor(item.level),
 .
 </div>
 </div> */}
+											</div>
 										</div>
-									</div>
-								))}
+									))}
+								</div>
 							</div>
 						</div>
-					</div>
+					</section>
 				</section>
 			</>
 		)
