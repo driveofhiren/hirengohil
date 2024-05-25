@@ -209,6 +209,12 @@ const resumeData = {
 				'https://drive.google.com/file/d/1i0uzpJsPxFaY_djEdgYDwQq74ok3W2EZ/preview',
 		},
 		{
+			id: 16,
+			name: 'Certificate',
+			embedUrl:
+				'https://drive.google.com/file/d/1i1-0E24bAYzuZ1iZq1lC6j4lCO2BlIiO/preview',
+		},
+		{
 			id: 13,
 			name: 'ID Card',
 			embedUrl:
@@ -221,7 +227,7 @@ const resumeData = {
 				'https://drive.google.com/file/d/1huov-4qK6j6naRMjjizDX1gJYlS8WM-s/preview',
 		},
 		{
-			id: 16,
+			id: 17,
 			name: 'Welcome Banner',
 			embedUrl:
 				'https://drive.google.com/file/d/1hw1z0QfjP4URgDbt23ed9UKJ486uWZ4V/preview',
