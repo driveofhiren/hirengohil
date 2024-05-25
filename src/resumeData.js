@@ -218,7 +218,7 @@ const resumeData = {
 			id: 15,
 			name: 'Welcome Banner',
 			embedUrl:
-				'"https://drive.google.com/file/d/1hw1z0QfjP4URgDbt23ed9UKJ486uWZ4V/preview',
+				'https://drive.google.com/file/d/1hw1z0QfjP4URgDbt23ed9UKJ486uWZ4V/preview',
 		},
 	],
 

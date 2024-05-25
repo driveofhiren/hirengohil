@@ -2,10 +2,45 @@ import React, { Component } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { useInView } from 'react-intersection-observer'
+
+// LazyLoadIframe Component
+const LazyLoadIframe = ({ src, title }) => {
+	const { ref, inView } = useInView({
+		triggerOnce: true, // load only once
+		threshold: 0.25, // load when 25% of the iframe is in view
+	})
+
+	return (
+		<div ref={ref} style={{ minHeight: '480px' }}>
+			{inView ? (
+				<iframe
+					src={src}
+					width="100%"
+					height="480"
+					allow="autoplay"
+					title={title}
+					style={{ border: 'none' }}
+				></iframe>
+			) : (
+				<div
+					style={{
+						height: '480px',
+						display: 'flex',
+						alignItems: 'center',
+						justifyContent: 'center',
+					}}
+				>
+					<span>Loading...</span>
+				</div>
+			)}
+		</div>
+	)
+}
 
 export default class Graphics extends Component {
 	render() {
-		const resumeData = this.props.resumeData
+		const { resumeData } = this.props
 
 		const settings = {
 			dots: true,
@@ -53,17 +88,13 @@ export default class Graphics extends Component {
 											style={{ padding: '10px' }}
 										>
 											<div className="item-wrap">
-												<iframe
+												<LazyLoadIframe
 													src={item.embedUrl}
-													width="100%"
-													height="480"
-													allow="autoplay"
 													title={item.name}
-													style={{ border: 'none' }}
-												></iframe>
+												/>
 												<div className="overlay">
 													<div className="graphics-item-meta center-block">
-														<h5>{item.name} </h5>
+														<h5>{item.name}</h5>
 													</div>
 												</div>
 											</div>
