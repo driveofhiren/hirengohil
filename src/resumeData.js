@@ -96,6 +96,9 @@ const resumeData = {
 			skillname: 'HTML5/CSS/Tailwind',
 		},
 		{
+			skillname: 'Wordpress',
+		},
+		{
 			skillname: 'React.js/ASP.NET',
 		},
 		{
@@ -108,7 +111,7 @@ const resumeData = {
 			skillname: 'SQL, MongoDB, Firebase, GraphQL',
 		},
 		{
-			skillname: 'Adobe Photoshop, Figma',
+			skillname: 'Adobe Photoshop, Figma, Canva',
 		},
 		{
 			skillname: 'Adobe Illustrator',
