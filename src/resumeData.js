@@ -275,7 +275,7 @@ const resumeData = {
 		},
 		{
 			name: 'Musicial Artist Website',
-			description: 'HTML/CSS',
+			description: 'HTML/CSS, Wordpress',
 			imgurl: 'https://github.com/driveofhiren/Artist-Website',
 		},
 		{
@@ -285,7 +285,7 @@ const resumeData = {
 		},
 		{
 			name: 'E-commerce Application',
-			description: 'PHP',
+			description: 'PHP/Wordpress',
 			imgurl: 'https://github.com/driveofhiren/ecomphp',
 		},
 		{
