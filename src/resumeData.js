@@ -176,6 +176,13 @@ const resumeData = {
 				'https://drive.google.com/file/d/1h1O14YQcuFMYV63mOKomqV8mhDz5Phba/preview',
 		},
 		{
+			id: 19,
+			name: 'Artworks',
+			embedUrl:
+				'https://drive.google.com/file/d/1irwe46mngJfEUvYNJaZks4hXpt0UFAvt/preview',
+		},
+
+		{
 			id: 7,
 			name: 'Cover Photo',
 			embedUrl:
