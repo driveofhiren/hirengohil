@@ -9,7 +9,6 @@ const resumeData = {
 			<span
 				style={{
 					color: 'Magenta',
-					fontWeight: 'bold',
 					margin: '0 5px',
 				}}
 			>
@@ -19,7 +18,6 @@ const resumeData = {
 			<span
 				style={{
 					color: 'deeppink',
-					fontWeight: 'bold',
 					margin: '0 5px',
 				}}
 			>
@@ -30,7 +28,6 @@ const resumeData = {
 			<span
 				style={{
 					color: 'green',
-					fontWeight: 'bold',
 					margin: '0 5px',
 				}}
 			>
