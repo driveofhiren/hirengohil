@@ -17,7 +17,7 @@ const Header = ({ resumeData }) => (
 				</a>
 				<ul id="nav" className="nav">
 					<li className="current">
-						<a className="smoothscroll" href="#home">
+						<a className="smoothscroll " href="#home">
 							Home
 						</a>
 					</li>
@@ -27,17 +27,17 @@ const Header = ({ resumeData }) => (
 						</a>
 					</li>
 					<li>
-						<a className="smoothscroll" href="#projects">
+						<a className="smoothscroll w" href="#projects">
 							Projects
 						</a>
 					</li>
 					<li>
-						<a className="smoothscroll" href="#graphics">
+						<a className="smoothscroll g" href="#graphics">
 							Graphics
 						</a>
 					</li>
 					<li>
-						<a className="smoothscroll" href="#productions">
+						<a className="smoothscroll m" href="#productions">
 							Productions
 						</a>
 					</li>

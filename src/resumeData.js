@@ -3,8 +3,15 @@ const resumeData = {
 	name: 'Hiren Gohil',
 	role: 'Web Developer, Music Producer, Graphic Designer',
 	cv: 'https://drive.google.com/file/d/1s5KAkCp5Oa4t-nz1BMXVxuhjjgk1nfXF/view?usp=drive_link',
-	roleDescription:
-		'I am a skilled professional, adept in the realms of Web development, Music production, and Graphic design, seamlessly blending my creative instincts with technical expertise.',
+	roleDescription: (
+		<p>
+			I am a skilled professional, adept in the realms of{' '}
+			<span style={{ color: 'Magenta' }}>Web development</span>,{' '}
+			<span style={{ color: 'green' }}>Music production</span>, and{' '}
+			<span style={{ color: 'deeppink' }}>Graphic design</span>,
+			seamlessly blending my creative instincts with technical expertise.
+		</p>
+	),
 	socialLinks: [
 		{
 			name: 'linkedin',
