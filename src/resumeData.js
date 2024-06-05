@@ -143,7 +143,7 @@ const resumeData = {
 			skillname: 'SQL, MongoDB, Firebase, GraphQL',
 		},
 		{
-			skillname: 'Adobe Photoshop, Figma, Canva',
+			skillname: 'Adobe Photoshop, Figma, Canva, Adobe XD',
 		},
 		{
 			skillname: 'Adobe Illustrator',
@@ -152,10 +152,7 @@ const resumeData = {
 			skillname: 'FL Studio',
 		},
 		{
-			skillname: 'Adobe Premiere',
-		},
-		{
-			skillname: 'Adobe Audition',
+			skillname: 'Adobe Premiere, Adobe Audition',
 		},
 		{
 			skillname: 'Adobe After Effects',
