@@ -143,10 +143,10 @@ const resumeData = {
 			skillname: 'SQL, MongoDB, Firebase, GraphQL',
 		},
 		{
-			skillname: 'Adobe Photoshop, Figma, Canva, Adobe XD',
+			skillname: 'Adobe Photoshop, Figma, Canva',
 		},
 		{
-			skillname: 'Adobe Illustrator',
+			skillname: 'Adobe Illustrator, Adobe XD',
 		},
 		{
 			skillname: 'FL Studio',
