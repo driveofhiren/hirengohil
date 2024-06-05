@@ -105,7 +105,10 @@ const Header = ({ resumeData }) => (
 							resumeData.socialLinks.map((item) => (
 								<li key={item.name}>
 									<a href={item.url}>
-										<i className={item.className}></i>
+										<i
+											className={item.className}
+											style={{ fontSize: '40px' }}
+										/>
 									</a>
 								</li>
 							))}
