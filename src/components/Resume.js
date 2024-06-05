@@ -12,7 +12,7 @@ export default class Resume extends Component {
 						</h1>
 					</div>
 
-					<section id="skill" style={{ backgroundColor: '#00004d' }}>
+					<section id="skill" style={{ backgroundColor: '#1B3A4B' }}>
 						<div className="container">
 							<div className="row skill">
 								<div className="skills-container">

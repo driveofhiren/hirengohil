@@ -6,50 +6,40 @@ export default class Porfolio extends Component {
 
 		return (
 			<section id="projects">
-				<div className="row">
-					<div className="rcon">
-						<h1>
-							<span>Projects</span>{' '}
-						</h1>
-						<div id="portfolio-wrapper" className="bgrid-quarters">
-							{resumeData.portfolio &&
-								resumeData.portfolio.map((item, index) => (
-									<div
-										className="columns portfolio-item "
-										key={index}
-									>
-										<div
-											className="item-wrap"
-											style={{
-												backgroundColor: '#000080',
-												//add border white
-												border: '1px solid #290066',
+				<h1>
+					<span>Projects</span>
+				</h1>
+				<div className="portfolio-item">
+					{resumeData.portfolio &&
+						resumeData.portfolio.map((item, index) => (
+							<div className="" key={index}>
+								<div
+									className="item-wrap"
+									style={{
+										backgroundColor: '#3E1F47',
+										borderRadius: '3px',
+									}}
+								>
+									<a href={item.imgurl}>
+										<div>
+											<div className="portfolio-item-meta">
+												<h5
+													style={{
+														color: '#EBEBF2',
+													}}
+												>
+													{item.name}
+												</h5>
 
-												borderRadius: '8px',
-											}}
-										>
-											<a href={item.imgurl}>
-												<div>
-													<div className="portfolio-item-meta">
-														<h5
-															style={{
-																color: '#EBEBF2',
-															}}
-														>
-															{item.name}
-														</h5>
-
-														<p style={{}}>
-															{item.description}
-														</p>
-													</div>
-												</div>
-											</a>
+												<p style={{}}>
+													{item.description}
+												</p>
+											</div>
 										</div>
-									</div>
-								))}
-						</div>
-					</div>
+									</a>
+								</div>
+							</div>
+						))}
 				</div>
 			</section>
 		)

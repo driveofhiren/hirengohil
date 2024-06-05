@@ -8,7 +8,7 @@ const resumeData = {
 			I am a skilled professional, adept in the realms of
 			<span
 				style={{
-					color: 'Magenta',
+					color: '#312244',
 					margin: '0 5px',
 				}}
 			>
@@ -17,7 +17,7 @@ const resumeData = {
 			,
 			<span
 				style={{
-					color: 'deeppink',
+					color: '#312244',
 					margin: '0 5px',
 				}}
 			>
@@ -27,7 +27,7 @@ const resumeData = {
 			, and
 			<span
 				style={{
-					color: 'green',
+					color: '#312244',
 					margin: '0 5px',
 				}}
 			>
@@ -317,7 +317,7 @@ const resumeData = {
 		},
 		{
 			name: 'Employee Management System',
-			description: 'React/Mysql',
+			description: 'React.js/Mysql',
 			imgurl: 'https://github.com/driveofhiren/ems',
 		},
 		{

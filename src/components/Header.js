@@ -47,13 +47,13 @@ const Header = ({ resumeData }) => (
 			<div className="row banner">
 				<div className="banner-text">
 					<h1 className="responsive-headline">
-						I am {resumeData.name}.
+						I am {resumeData.name}
 					</h1>
 					<h3>{resumeData.roleDescription}</h3>
 					<div className="text-center mt-4">
 						<Button
 							style={{
-								background: '#000080',
+								background: '#4D194D',
 								color: '#ffffff',
 								marginRight: '10px',
 							}}
@@ -70,7 +70,7 @@ const Header = ({ resumeData }) => (
 						</Button>
 						<Button
 							style={{
-								background: '#0000b3',
+								background: '#3E1F47',
 								color: '#0d0325',
 								marginRight: '10px',
 							}}
@@ -87,7 +87,7 @@ const Header = ({ resumeData }) => (
 						</Button>
 						<Button
 							style={{
-								backgroundColor: '#0000e6',
+								backgroundColor: '#1B3A4B',
 								color: '#0d0325',
 								marginRight: '10px',
 							}}
