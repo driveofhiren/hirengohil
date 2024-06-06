@@ -125,13 +125,13 @@ const resumeData = {
 	skillsDescription: 'Your skills here',
 	skills: [
 		{
-			skillname: 'HTML5/CSS/Tailwind',
+			skillname: 'HTML5,CSS,Tailwind',
 		},
 		{
 			skillname: 'Wordpress',
 		},
 		{
-			skillname: 'React.js/ASP.NET',
+			skillname: 'React.js,ASP.NET',
 		},
 		{
 			skillname: 'Python, Java, C++,C#',
