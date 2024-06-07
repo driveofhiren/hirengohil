@@ -320,7 +320,7 @@ const resumeData = {
 		{
 			name: 'Book Store',
 			description:
-				'An ASP.NET-based e-commerce platform for books, featuring User authentication, Product management, and Order processing. ',
+				'ASP.NET-based e-commerce platform for books, featuring User authentication, Product management, and Order processing. ',
 			imgurl: 'https://github.com/driveofhiren/Book-Store',
 		},
 		{
