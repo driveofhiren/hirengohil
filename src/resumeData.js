@@ -289,48 +289,57 @@ const resumeData = {
 	portfolio: [
 		{
 			name: 'Cosmos Community App(*)',
-			description: 'React.js,Node.js',
+			description:
+				'Currently working on the Cosmos Community App, where React.js and Node.js combine to achieve various user interactions.',
 			imgurl: 'https://github.com/driveofhiren',
 		},
 		{
 			name: 'ShiftTime(Shift Schedule Application)',
-			description: 'React.js,Node.js,Flutter',
+			description:
+				'Streamline employee scheduling and time management effortlessly with ShiftTime, leveraging the power of React.js, Node.js, and Flutter.',
 			imgurl: 'https://shifttime.vercel.app/',
 		},
 		{
 			name: 'Online Multiplayer Card Game(235)',
-			description: 'React.j,/Node.js',
+			description:
+				'I developed a project using React.js and Node.js, drawing inspiration from the 235 card game to optimize team collaboration and efficiency.',
 			imgurl: 'https://github.com/driveofhiren/cardgame',
 		},
 		{
-			name: 'Cosmetics Store',
-			description: 'HTML,CSS',
-			imgurl: 'https://github.com/driveofhiren/Cosmeticd',
-		},
-		{
-			name: 'Bakery',
-			description: 'HTML,CSS',
-			imgurl: 'https://github.com/driveofhiren/bakery',
-		},
-		{
-			name: 'Musicial Artist',
-			description: 'HTML,CSS, Wordpress',
-			imgurl: 'https://github.com/driveofhiren/Artist-Website',
-		},
-		{
 			name: 'Employee Management Portal',
-			description: 'React.js,Mysql',
+			description:
+				'The Employee Management Portal utilizes React and GraphQL to efficiently manage employee details.',
 			imgurl: 'https://github.com/driveofhiren/ems',
 		},
 		{
 			name: 'E-commerce Store',
-			description: 'PHP,Wordpress',
+			description:
+				'E-commerce Store is a platform for buying and selling items. It is built on a  foundation of PHP and MySQL, ensuring reliability and flexibility.',
 			imgurl: 'https://github.com/driveofhiren/ecomphp',
 		},
 		{
 			name: 'Book Store',
-			description: 'ASP.NET',
+			description:
+				'An ASP.NET-based e-commerce platform for books, featuring User authentication, Product management, and Order processing. ',
 			imgurl: 'https://github.com/driveofhiren/Book-Store',
+		},
+		{
+			name: 'Cosmetics Store',
+			description:
+				'The Bakery Store website boasts a sleek HTML and CSS design, combining conciseness with an inviting aesthetic.',
+			imgurl: 'https://github.com/driveofhiren/Cosmeticd',
+		},
+		{
+			name: 'Bakery Store ',
+			description:
+				'The Bakery Store is designed with HTML and CSS, focusing on simplicity and user-friendly experience.',
+			imgurl: 'https://github.com/driveofhiren/bakery',
+		},
+		{
+			name: 'Musical Artist',
+			description:
+				'The Musical Artist website is built using HTML, CSS, and WordPress, ensuring a versatile and visually appealing online presence.',
+			imgurl: 'https://github.com/driveofhiren/Artist-Website',
 		},
 	],
 	music: [

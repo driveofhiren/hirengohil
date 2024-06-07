@@ -26,9 +26,14 @@ export default class Portfolio extends Component {
 										}}
 									>
 										<div className="portfolio-item-meta">
-											<h5 style={{ color: '#EBEBF2' }}>
+											<h4
+												style={{
+													color: 'white',
+													fontWeight: 'bold',
+												}}
+											>
 												{item.name}
-											</h5>
+											</h4>
 											<p>{item.description}</p>
 										</div>
 									</div>
