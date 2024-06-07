@@ -107,7 +107,7 @@ const Header = ({ resumeData }) => (
 									<a href={item.url}>
 										<i
 											className={item.className}
-											style={{ fontSize: '40px' }}
+											style={{ fontSize: '30px' }}
 										/>
 									</a>
 								</li>
