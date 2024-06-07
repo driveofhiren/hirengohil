@@ -34,7 +34,14 @@ export default class Portfolio extends Component {
 											>
 												{item.name}
 											</h4>
-											<p>{item.description}</p>
+											<div
+												//make font color white
+												style={{
+													color: 'white',
+												}}
+											>
+												{item.description}
+											</div>
 										</div>
 									</div>
 								</a>

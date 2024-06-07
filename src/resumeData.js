@@ -290,7 +290,7 @@ const resumeData = {
 		{
 			name: 'Cosmos Community App(*)',
 			description:
-				'Currently working on the Cosmos Community App, where React.js and Node.js combine to achieve various user interactions.',
+				'Currently working on the Cosmos Community App, where React.js, MongoDB, and Node.js combine to achieve various user interactions.',
 			imgurl: 'https://github.com/driveofhiren',
 		},
 		{
