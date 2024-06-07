@@ -289,63 +289,48 @@ const resumeData = {
 	portfolio: [
 		{
 			name: 'Cosmos Community App(*)',
-			description: 'React.js/Node.js',
+			description: 'React.js,Node.js',
 			imgurl: 'https://github.com/driveofhiren',
 		},
 		{
 			name: 'ShiftTime(Shift Schedule Application)',
-			description: 'React.js/Node.js/Flutter',
+			description: 'React.js,Node.js,Flutter',
 			imgurl: 'https://shifttime.vercel.app/',
 		},
 		{
 			name: 'Online Multiplayer Card Game(235)',
-			description: 'React.js/Node.js',
+			description: 'React.j,/Node.js',
 			imgurl: 'https://github.com/driveofhiren/cardgame',
 		},
 		{
-			name: 'Tesla Mobile',
-			description: 'HiFi Design',
-			imgurl: 'https://github.com/driveofhiren/tesla-mobile-web-design',
-		},
-		{
-			name: 'Toronto Tourism',
-			description: 'HiFi Design',
-			imgurl: 'https://github.com/driveofhiren/toronto',
-		},
-		{
-			name: 'Cosmetics Website',
-			description: 'HTML/CSS',
+			name: 'Cosmetics Store',
+			description: 'HTML,CSS',
 			imgurl: 'https://github.com/driveofhiren/Cosmeticd',
 		},
 		{
-			name: 'Bakery Website',
-			description: 'HTML/CSS',
+			name: 'Bakery',
+			description: 'HTML,CSS',
 			imgurl: 'https://github.com/driveofhiren/bakery',
 		},
 		{
-			name: 'Musicial Artist Website',
-			description: 'HTML/CSS, Wordpress',
+			name: 'Musicial Artist',
+			description: 'HTML,CSS, Wordpress',
 			imgurl: 'https://github.com/driveofhiren/Artist-Website',
 		},
 		{
-			name: 'Employee Management System',
-			description: 'React.js/Mysql',
+			name: 'Employee Management Portal',
+			description: 'React.js,Mysql',
 			imgurl: 'https://github.com/driveofhiren/ems',
 		},
 		{
-			name: 'E-commerce Application',
-			description: 'PHP/Wordpress',
+			name: 'E-commerce Store',
+			description: 'PHP,Wordpress',
 			imgurl: 'https://github.com/driveofhiren/ecomphp',
 		},
 		{
 			name: 'Book Store',
 			description: 'ASP.NET',
 			imgurl: 'https://github.com/driveofhiren/Book-Store',
-		},
-		{
-			name: 'Budget Web application',
-			description: 'JavaScript',
-			imgurl: 'https://github.com/driveofhiren/Budget-Application',
 		},
 	],
 	music: [
