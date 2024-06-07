@@ -300,9 +300,9 @@ const resumeData = {
 			imgurl: 'https://shifttime.vercel.app/',
 		},
 		{
-			name: 'Online Multiplayer Card Game(235)',
+			name: 'Multiplayer Card Game(235)',
 			description:
-				'I developed a project using React.js and Node.js, drawing inspiration from the 235 card game to optimize team collaboration and efficiency.',
+				'Card game using React.js and Node.js, inspired by the popular 235 card game. The game features real-time multiplayer functionality, dynamic and interactive environment.',
 			imgurl: 'https://github.com/driveofhiren/cardgame',
 		},
 		{
