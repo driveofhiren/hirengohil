@@ -90,11 +90,7 @@ export default class Graphics extends Component {
 												src={item.embedUrl}
 												title={item.name}
 											/>
-											<div className="overlay">
-												<div className="graphics-item-meta center-block">
-													<h5>{item.name}</h5>
-												</div>
-											</div>
+											<h5>{item.name}</h5>
 										</div>
 									</div>
 								))}

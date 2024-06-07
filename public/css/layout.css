@@ -131,12 +131,12 @@ header .scrolldown a:hover {
 	margin: 0;
 	padding: 0;
 	border: none;
+	font-size: medium;
 	outline: none;
 }
 
 /* nav-wrap */
 #nav-wrap {
-	/* font: 12px 'roboto', sans-serif; */
 	width: 100%;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
@@ -149,6 +149,10 @@ header .scrolldown a:hover {
 }
 .opaque {
 	background-color: #333;
+}
+.slick-dots {
+	position: relative !important;
+	bottom: 0 !important;
 }
 
 /* hide toggle button */
