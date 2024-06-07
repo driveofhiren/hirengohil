@@ -163,12 +163,6 @@ const resumeData = {
 	],
 	graphics: [
 		{
-			id: 1,
-			name: 'Web',
-			embedUrl:
-				'https://drive.google.com/file/d/1isM1gDfeiqZeKyLKxLBC4WzxLRUQYa_G/preview',
-		},
-		{
 			id: 2,
 			name: 'Logo',
 			embedUrl:
@@ -180,7 +174,12 @@ const resumeData = {
 			embedUrl:
 				'https://drive.google.com/file/d/1glxQnF9Tp_jlLzn310kX3S_MlZ9W_wi9/preview',
 		},
-
+		{
+			id: 5,
+			name: 'Web',
+			embedUrl:
+				'https://drive.google.com/file/d/1isM1gDfeiqZeKyLKxLBC4WzxLRUQYa_G/preview',
+		},
 		{
 			id: 6,
 			name: 'Logo',
@@ -189,6 +188,25 @@ const resumeData = {
 		},
 		{
 			id: 9,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1j6yNutFCf1Kvy1LVGWB4y4-umrNSn35k/preview',
+		},
+		{
+			id: 7,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1ivQticsTBQaKScmVukWfOQSx6bGA5ubW/preview',
+		},
+		{
+			id: 10,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1j9q5PCKCRvgQOsQAiu1p9veKH3QMHECR/preview',
+		},
+
+		{
+			id: 21,
 			name: 'Logo',
 			embedUrl:
 				'https://drive.google.com/file/d/1gq0l9yj-shf3LhpMEoZbf4aBiGeqK0on/preview',
@@ -213,19 +231,13 @@ const resumeData = {
 		},
 
 		{
-			id: 7,
-			name: 'Cover Photo',
-			embedUrl:
-				'https://drive.google.com/file/d/1gtsRZW8wwUHCLkFaF-oolCotVEm4laKv/preview',
-		},
-		{
-			id: 8,
+			id: 22,
 			name: 'Cover Photo',
 			embedUrl:
 				'https://drive.google.com/file/d/1h22C035Jjy14ydvfNbqJmKl5jqvaKsoM/preview',
 		},
 		{
-			id: 10,
+			id: 23,
 			name: 'T Shirt Mock up',
 			embedUrl:
 				'https://drive.google.com/file/d/1hk7K0fRMgHpoiP0wpfoH5s-2vHGBueof/preview',
