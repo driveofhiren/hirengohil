@@ -12,35 +12,27 @@ export default class Portfolio extends Component {
 				<div className="portfolio-item">
 					{resumeData.portfolio &&
 						resumeData.portfolio.map((item, index) => (
-							<div className="" key={index}>
-								<div
-									className="item-wrap"
-									style={{
-										backgroundColor: '#3E1F47',
-										borderRadius: '3px',
-									}}
+							<div key={index}>
+								<a
+									href={item.imgurl}
+									target="_blank"
+									rel="noopener noreferrer"
 								>
-									<a
-										href={item.imgurl}
-										target="_blank"
-										rel="noopener noreferrer"
+									<div
+										className="item-wrap"
+										style={{
+											backgroundColor: '#3E1F47',
+											borderRadius: '3px',
+										}}
 									>
-										<div>
-											<div className="portfolio-item-meta">
-												<h5
-													style={{
-														color: '#EBEBF2',
-													}}
-												>
-													{item.name}
-												</h5>
-												<p style={{}}>
-													{item.description}
-												</p>
-											</div>
+										<div className="portfolio-item-meta">
+											<h5 style={{ color: '#EBEBF2' }}>
+												{item.name}
+											</h5>
+											<p>{item.description}</p>
 										</div>
-									</a>
-								</div>
+									</div>
+								</a>
 							</div>
 						))}
 				</div>
