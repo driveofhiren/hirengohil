@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Porfolio extends Component {
+export default class Portfolio extends Component {
 	render() {
 		let resumeData = this.props.resumeData
 
@@ -20,7 +20,11 @@ export default class Porfolio extends Component {
 										borderRadius: '3px',
 									}}
 								>
-									<a href={item.imgurl}>
+									<a
+										href={item.imgurl}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<div>
 											<div className="portfolio-item-meta">
 												<h5
@@ -30,7 +34,6 @@ export default class Porfolio extends Component {
 												>
 													{item.name}
 												</h5>
-
 												<p style={{}}>
 													{item.description}
 												</p>
