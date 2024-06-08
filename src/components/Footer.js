@@ -19,7 +19,7 @@ const Footer = ({ resumeData }) => (
 									<i
 										className={item.className}
 										style={{
-											fontSize: '24px',
+											fontSize: '20px',
 											color: '#ffffff',
 										}}
 									/>
