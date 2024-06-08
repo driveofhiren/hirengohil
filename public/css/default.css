@@ -1120,6 +1120,9 @@ properly.
 		margin: 0 auto;
 		padding: 0;
 	}
+	.social li a i {
+		font-size: 28px !important;
+	}
 	.portfolio-item {
 		grid-template-columns: 1fr;
 	}
