@@ -12,7 +12,7 @@ const resumeData = {
 					margin: '0 5px',
 				}}
 			>
-				Web Development
+				Full Stack Development
 			</span>
 			,
 			<span
