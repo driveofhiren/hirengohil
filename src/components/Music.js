@@ -67,20 +67,6 @@ export default class Music extends Component {
 							></a>
 						</div>
 					</div>
-					<h1>
-						<span>Radio</span>
-					</h1>
-					<div className="player-container">
-						<iframe
-							src="https://open.spotify.com/embed/playlist/37i9dQZF1E4zQRNpLFRvji?utm_source=generator&theme=0"
-							width="70%"
-							height="400px"
-							frameBorder="0"
-							allowFullScreen=""
-							allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-							loading="lazy"
-						></iframe>{' '}
-					</div>
 				</div>
 			</section>
 		)
