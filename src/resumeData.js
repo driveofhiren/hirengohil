@@ -181,12 +181,6 @@ const resumeData = {
 				'https://drive.google.com/file/d/1isM1gDfeiqZeKyLKxLBC4WzxLRUQYa_G/preview',
 		},
 		{
-			id: 6,
-			name: 'Logo',
-			embedUrl:
-				'https://drive.google.com/file/d/1gnxy-uHS6KrxPwCJrLqmLTa6ElLDctx3/preview',
-		},
-		{
 			id: 9,
 			name: 'Social Media',
 			embedUrl:
@@ -212,12 +206,6 @@ const resumeData = {
 				'https://drive.google.com/file/d/1gq0l9yj-shf3LhpMEoZbf4aBiGeqK0on/preview',
 		},
 		{
-			id: 4,
-			name: 'Artworks',
-			embedUrl:
-				'https://drive.google.com/file/d/1hBiHf-3phXVvkWwG2ZUEqv8UG_q7MYz2/preview',
-		},
-		{
 			id: 5,
 			name: 'Artworks',
 			embedUrl:
@@ -228,13 +216,6 @@ const resumeData = {
 			name: 'Artworks',
 			embedUrl:
 				'https://drive.google.com/file/d/1irwe46mngJfEUvYNJaZks4hXpt0UFAvt/preview',
-		},
-
-		{
-			id: 22,
-			name: 'Cover Photo',
-			embedUrl:
-				'https://drive.google.com/file/d/1h22C035Jjy14ydvfNbqJmKl5jqvaKsoM/preview',
 		},
 		{
 			id: 23,
