@@ -198,6 +198,48 @@ const resumeData = {
 			embedUrl:
 				'https://drive.google.com/file/d/1j9q5PCKCRvgQOsQAiu1p9veKH3QMHECR/preview',
 		},
+		{
+			id: 11,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1AypoQ6yPHQdlS7RG5eYYAgX0RCFd-Mbw/preview',
+		},
+		{
+			id: 12,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1KGO4ck4AkHWCOpnpdhQc7yDZAXolhcan/preview',
+		},
+		{
+			id: 13,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1YqaMS-kOnvOOkgY02r3bQ9VYCSFA7bt_/preview',
+		},
+		{
+			id: 14,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1Ab5RkvUGQU8erVWfSufgW6RS-g9wgP7H/preview',
+		},
+		{
+			id: 17,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1aGYU7LYOz8SGUHYQheC1iq0vqYBU4rOM/preview',
+		},
+		{
+			id: 18,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1wIIfaB2ZwTKoxfHUOp-U4UM-X2vRcz4H/preview',
+		},
+		{
+			id: 19,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1seYaQi9rJVm1s3Ct2NnXOZlyChy_Y-2J/preview',
+		},
 
 		{
 			id: 21,
