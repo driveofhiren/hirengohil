@@ -166,7 +166,7 @@ const resumeData = {
 			id: 1,
 			name: 'T-Shirt',
 			embedUrl:
-				'"https://drive.google.com/file/d/1hk7K0fRMgHpoiP0wpfoH5s-2vHGBueof/preview',
+				'https://drive.google.com/file/d/1hk7K0fRMgHpoiP0wpfoH5s-2vHGBueof/preview',
 		},
 		{
 			id: 2,
