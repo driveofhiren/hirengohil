@@ -163,149 +163,131 @@ const resumeData = {
 	],
 	graphics: [
 		{
+			id: 1,
+			name: 'T-Shirt',
+			embedUrl:
+				'"https://drive.google.com/file/d/1hk7K0fRMgHpoiP0wpfoH5s-2vHGBueof/preview',
+		},
+		{
 			id: 2,
-			name: 'Logo',
-			embedUrl:
-				'https://drive.google.com/file/d/1gn_xnRGnYiTA6gBVTB0wWMMkRD0DTzIt/preview',
-		},
-		{
-			id: 3,
-			name: 'Logo',
-			embedUrl:
-				'https://drive.google.com/file/d/1glxQnF9Tp_jlLzn310kX3S_MlZ9W_wi9/preview',
-		},
-		{
-			id: 5,
-			name: 'Web',
-			embedUrl:
-				'https://drive.google.com/file/d/1isM1gDfeiqZeKyLKxLBC4WzxLRUQYa_G/preview',
-		},
-		{
-			id: 9,
-			name: 'Social Media',
-			embedUrl:
-				'https://drive.google.com/file/d/1j6yNutFCf1Kvy1LVGWB4y4-umrNSn35k/preview',
-		},
-		{
-			id: 7,
-			name: 'Social Media',
-			embedUrl:
-				'https://drive.google.com/file/d/1ivQticsTBQaKScmVukWfOQSx6bGA5ubW/preview',
-		},
-		{
-			id: 10,
-			name: 'Social Media',
-			embedUrl:
-				'https://drive.google.com/file/d/1j9q5PCKCRvgQOsQAiu1p9veKH3QMHECR/preview',
-		},
-		{
-			id: 11,
-			name: 'Social Media',
-			embedUrl:
-				'https://drive.google.com/file/d/1AypoQ6yPHQdlS7RG5eYYAgX0RCFd-Mbw/preview',
-		},
-		{
-			id: 12,
-			name: 'Social Media',
-			embedUrl:
-				'https://drive.google.com/file/d/1KGO4ck4AkHWCOpnpdhQc7yDZAXolhcan/preview',
-		},
-		{
-			id: 13,
-			name: 'Social Media',
-			embedUrl:
-				'https://drive.google.com/file/d/1YqaMS-kOnvOOkgY02r3bQ9VYCSFA7bt_/preview',
-		},
-		{
-			id: 14,
-			name: 'Social Media',
-			embedUrl:
-				'https://drive.google.com/file/d/1Ab5RkvUGQU8erVWfSufgW6RS-g9wgP7H/preview',
-		},
-		{
-			id: 17,
-			name: 'Social Media',
-			embedUrl:
-				'https://drive.google.com/file/d/1aGYU7LYOz8SGUHYQheC1iq0vqYBU4rOM/preview',
-		},
-		{
-			id: 18,
-			name: 'Social Media',
-			embedUrl:
-				'https://drive.google.com/file/d/1wIIfaB2ZwTKoxfHUOp-U4UM-X2vRcz4H/preview',
-		},
-		{
-			id: 19,
-			name: 'Social Media',
-			embedUrl:
-				'https://drive.google.com/file/d/1seYaQi9rJVm1s3Ct2NnXOZlyChy_Y-2J/preview',
-		},
-
-		{
-			id: 21,
-			name: 'Logo',
-			embedUrl:
-				'https://drive.google.com/file/d/1gq0l9yj-shf3LhpMEoZbf4aBiGeqK0on/preview',
-		},
-		{
-			id: 5,
-			name: 'Artworks',
-			embedUrl:
-				'https://drive.google.com/file/d/1h1O14YQcuFMYV63mOKomqV8mhDz5Phba/preview',
-		},
-		{
-			id: 19,
-			name: 'Artworks',
-			embedUrl:
-				'https://drive.google.com/file/d/1irwe46mngJfEUvYNJaZks4hXpt0UFAvt/preview',
-		},
-		{
-			id: 23,
-			name: 'T Shirt Mock up',
-			embedUrl:
-				'https://drive.google.com/file/d/1hk7K0fRMgHpoiP0wpfoH5s-2vHGBueof/preview',
-		},
-		{
-			id: 11,
 			name: 'Momento Design',
 			embedUrl:
 				'https://drive.google.com/file/d/1hYTif0A-AEUD4kVQPT7-lhYvB-IX5r7e/preview',
 		},
 		{
-			id: 12,
-			name: 'Certificate',
-			embedUrl:
-				'https://drive.google.com/file/d/1hNX89ibxbYq1hEl6C_0rPHMxSmyQsyq7/preview',
-		},
-		{
-			id: 15,
+			id: 3,
 			name: 'Certificate',
 			embedUrl:
 				'https://drive.google.com/file/d/1i0uzpJsPxFaY_djEdgYDwQq74ok3W2EZ/preview',
 		},
 		{
-			id: 16,
-			name: 'Certificate',
+			id: 4,
+			name: 'Web',
 			embedUrl:
-				'https://drive.google.com/file/d/1i1-0E24bAYzuZ1iZq1lC6j4lCO2BlIiO/preview',
+				'https://drive.google.com/file/d/1isM1gDfeiqZeKyLKxLBC4WzxLRUQYa_G/preview',
 		},
 		{
-			id: 13,
+			id: 5,
+			name: 'Certificate',
+			embedUrl:
+				'https://drive.google.com/file/d/1hNX89ibxbYq1hEl6C_0rPHMxSmyQsyq7/preview',
+		},
+		{
+			id: 6,
+			name: 'Artwork',
+			embedUrl:
+				'https://drive.google.com/file/d/1h1O14YQcuFMYV63mOKomqV8mhDz5Phba/preview',
+		},
+
+		{
+			id: 7,
+			name: 'Logo',
+			embedUrl:
+				'"https://drive.google.com/file/d/1gnxy-uHS6KrxPwCJrLqmLTa6ElLDctx3/preview',
+		},
+		{
+			id: 8,
+			name: 'Logo',
+			embedUrl:
+				'https://drive.google.com/file/d/1gn_xnRGnYiTA6gBVTB0wWMMkRD0DTzIt/preview',
+		},
+		{
+			id: 9,
+			name: 'Logo',
+			embedUrl:
+				'https://drive.google.com/file/d/1gq0l9yj-shf3LhpMEoZbf4aBiGeqK0on/preview',
+		},
+		{
+			id: 10,
 			name: 'ID Card',
 			embedUrl:
 				'https://drive.google.com/file/d/1hsYdYl14YfFSJs-GDAsNzrEesyo26JgD/preview',
 		},
 		{
-			id: 14,
+			id: 11,
 			name: 'Poster',
 			embedUrl:
 				'https://drive.google.com/file/d/1huov-4qK6j6naRMjjizDX1gJYlS8WM-s/preview',
 		},
 		{
-			id: 17,
+			id: 12,
 			name: 'Welcome Banner',
 			embedUrl:
 				'https://drive.google.com/file/d/1hw1z0QfjP4URgDbt23ed9UKJ486uWZ4V/preview',
+		},
+		{
+			id: 13,
+			name: 'Certificate',
+			embedUrl:
+				'https://drive.google.com/file/d/1i1-0E24bAYzuZ1iZq1lC6j4lCO2BlIiO/preview',
+		},
+		{
+			id: 14,
+			name: 'Artwork',
+			embedUrl:
+				'https://drive.google.com/file/d/1irwe46mngJfEUvYNJaZks4hXpt0UFAvt/preview',
+		},
+		{
+			id: 15,
+			name: 'Social media',
+			embedUrl:
+				'https://drive.google.com/file/d/1AypoQ6yPHQdlS7RG5eYYAgX0RCFd-Mbw/preview',
+		},
+		{
+			id: 16,
+			name: 'Social media',
+			embedUrl:
+				'https://drive.google.com/file/d/1KGO4ck4AkHWCOpnpdhQc7yDZAXolhcan/preview',
+		},
+		{
+			id: 17,
+			name: 'Social media',
+			embedUrl:
+				'https://drive.google.com/file/d/1YqaMS-kOnvOOkgY02r3bQ9VYCSFA7bt_/preview',
+		},
+		{
+			id: 18,
+			name: 'Social media',
+			embedUrl:
+				'https://drive.google.com/file/d/1aGYU7LYOz8SGUHYQheC1iq0vqYBU4rOM/preview',
+		},
+		{
+			id: 19,
+			name: 'Social media',
+			embedUrl:
+				'https://drive.google.com/file/d/1wIIfaB2ZwTKoxfHUOp-U4UM-X2vRcz4H/preview',
+		},
+		{
+			id: 20,
+			name: 'Social media',
+			embedUrl:
+				'https://drive.google.com/file/d/1l_BhAa5DWYv5poCyCh6emOro5RqegzKJ/preview',
+		},
+		{
+			id: 21,
+			name: 'Social media',
+			embedUrl:
+				'https://drive.google.com/file/d/1l_0fSxiK4MDTOEN14SKJmXjbgV65KLxF/preview',
 		},
 	],
 
