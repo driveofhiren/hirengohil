@@ -305,10 +305,10 @@ const resumeData = {
 			imgurl: 'https://shifttime.vercel.app/',
 		},
 		{
-			name: 'Multiplayer Card Game(235)',
+			name: 'Judgment-Card game',
 			description:
-				'Card game using React.js and Node.js, inspired by the popular 235 card game. The game features real-time multiplayer functionality, dynamic and interactive environment.',
-			imgurl: 'https://github.com/driveofhiren/cardgame',
+				'Judgement is a strategic card game where players predict how many rounds they will win. Points are earned based on the accuracy of their predictions, with a "Master Suit" adding extra challenge. The player with the most points wins.',
+			imgurl: 'http://judgementhiren.s3-website.us-east-2.amazonaws.com/',
 		},
 		{
 			name: 'Employee Management Portal',
