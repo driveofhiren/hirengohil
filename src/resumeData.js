@@ -254,10 +254,16 @@ const resumeData = {
 				'https://drive.google.com/file/d/10E8KB7qKEd7e5gforyDVR2NIkN_Jkau2/preview',
 		},
 		{
-			id: 15,
+			id: 16,
 			name: 'Geo Filter Snapchat',
 			embedUrl:
 				'https://drive.google.com/file/d/1-zznWj4BAsJfP92Z8K5Ce2aOi-V0qIMv/preview',
+		},
+		{
+			id: 17,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1X189LCdO8vzsKh2-I59A2xcrrvkvGc5C/preview',
 		},
 	],
 
