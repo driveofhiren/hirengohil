@@ -194,7 +194,7 @@ const resumeData = {
 		},
 		{
 			id: 6,
-			name: 'Soial Media',
+			name: 'Social Media',
 			embedUrl:
 				'https://drive.google.com/file/d/1-sEU3LgQ0zBiS3MzNjRmQAkNl_4gPeN7/preview',
 		},
@@ -243,7 +243,7 @@ const resumeData = {
 		},
 		{
 			id: 14,
-			name: 'Geo Filter Snapchat',
+			name: 'Momento Design',
 			embedUrl:
 				'https://drive.google.com/file/d/109lQAx-901hOxSCFIYRsSfqqavIa4Afj/preview',
 		},
@@ -252,6 +252,12 @@ const resumeData = {
 			name: 'Geo Filter Snapchat',
 			embedUrl:
 				'https://drive.google.com/file/d/10E8KB7qKEd7e5gforyDVR2NIkN_Jkau2/preview',
+		},
+		{
+			id: 15,
+			name: 'Geo Filter Snapchat',
+			embedUrl:
+				'https://drive.google.com/file/d/1-zznWj4BAsJfP92Z8K5Ce2aOi-V0qIMv/preview',
 		},
 	],
 
