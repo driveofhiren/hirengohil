@@ -166,128 +166,92 @@ const resumeData = {
 			id: 1,
 			name: 'T-Shirt',
 			embedUrl:
-				'https://drive.google.com/file/d/1hk7K0fRMgHpoiP0wpfoH5s-2vHGBueof/preview',
+				'https://drive.google.com/file/d/1-CCdp-HU7taAHy1J_myxQ0P--D2O6nnv/preview',
 		},
 		{
 			id: 2,
-			name: 'Momento Design',
+			name: 'Logo',
 			embedUrl:
-				'https://drive.google.com/file/d/1hYTif0A-AEUD4kVQPT7-lhYvB-IX5r7e/preview',
+				'https://drive.google.com/file/d/1-DhXbhKMuBvbnjI9l2Xjmk-hxYLrspVz/preview',
 		},
 		{
 			id: 3,
 			name: 'Certificate',
 			embedUrl:
-				'https://drive.google.com/file/d/1i0uzpJsPxFaY_djEdgYDwQq74ok3W2EZ/preview',
+				'https://drive.google.com/file/d/1-GxC9PHiH8yqqjjindupyH1auUJS8ORb/preview',
 		},
 		{
 			id: 4,
-			name: 'Web',
+			name: 'ID Card',
 			embedUrl:
-				'https://drive.google.com/file/d/1isM1gDfeiqZeKyLKxLBC4WzxLRUQYa_G/preview',
+				'https://drive.google.com/file/d/1-fwGujVPcKlX2mfYl5_ekGqSmX6i4Ppf/preview',
 		},
 		{
 			id: 5,
 			name: 'Certificate',
 			embedUrl:
-				'https://drive.google.com/file/d/1hNX89ibxbYq1hEl6C_0rPHMxSmyQsyq7/preview',
+				'https://drive.google.com/file/d/1-i_dC_GBulF_SPETmwKzFJIjKbgroj4u/preview',
 		},
 		{
 			id: 6,
-			name: 'Artwork',
+			name: 'Soial Media',
 			embedUrl:
-				'https://drive.google.com/file/d/1h1O14YQcuFMYV63mOKomqV8mhDz5Phba/preview',
+				'https://drive.google.com/file/d/1-sEU3LgQ0zBiS3MzNjRmQAkNl_4gPeN7/preview',
 		},
 
 		{
 			id: 7,
-			name: 'Logo',
+			name: 'Social Media',
 			embedUrl:
-				'"https://drive.google.com/file/d/1gnxy-uHS6KrxPwCJrLqmLTa6ElLDctx3/preview',
+				'https://drive.google.com/file/d/1-io_4R8CqXJXUQKHfARDnwmoZTUeAiWl/preview',
 		},
 		{
 			id: 8,
-			name: 'Logo',
+			name: 'Social Media',
 			embedUrl:
-				'https://drive.google.com/file/d/1gn_xnRGnYiTA6gBVTB0wWMMkRD0DTzIt/preview',
+				'https://drive.google.com/file/d/1-py3ZOOUVQh0uXKG54WUNegH4EV2YKfg/preview',
 		},
 		{
 			id: 9,
-			name: 'Logo',
+			name: 'Social Media',
 			embedUrl:
-				'https://drive.google.com/file/d/1gq0l9yj-shf3LhpMEoZbf4aBiGeqK0on/preview',
+				'https://drive.google.com/file/d/1-kUDar0c7J6IxsN2kXPNukp54LMGV2wo/preview',
 		},
 		{
 			id: 10,
-			name: 'ID Card',
+			name: 'Social Media',
 			embedUrl:
-				'https://drive.google.com/file/d/1hsYdYl14YfFSJs-GDAsNzrEesyo26JgD/preview',
+				'https://drive.google.com/file/d/1-vRaMOBoN17-5LOSHqncUW6Rf8ZbjQMA/preview',
 		},
 		{
 			id: 11,
-			name: 'Poster',
+			name: 'Social Media',
 			embedUrl:
-				'https://drive.google.com/file/d/1huov-4qK6j6naRMjjizDX1gJYlS8WM-s/preview',
+				'https://drive.google.com/file/d/1-w7eXfuOttZX73Qy7UsfwLfAg9LDBm1l/preview',
 		},
 		{
 			id: 12,
 			name: 'Welcome Banner',
 			embedUrl:
-				'https://drive.google.com/file/d/1hw1z0QfjP4URgDbt23ed9UKJ486uWZ4V/preview',
+				'https://drive.google.com/file/d/1Xtwb8ev4lTZg9HqeG0xQrNLSQ87ItpaM/preview',
 		},
 		{
 			id: 13,
-			name: 'Certificate',
+			name: 'Geo Filter Snapchat',
 			embedUrl:
-				'https://drive.google.com/file/d/1i1-0E24bAYzuZ1iZq1lC6j4lCO2BlIiO/preview',
+				'https://drive.google.com/file/d/109e7-lNB8ZEM8HP8a-l3BROpnkTgJby9/preview',
 		},
 		{
 			id: 14,
-			name: 'Artwork',
+			name: 'Geo Filter Snapchat',
 			embedUrl:
-				'https://drive.google.com/file/d/1irwe46mngJfEUvYNJaZks4hXpt0UFAvt/preview',
+				'https://drive.google.com/file/d/109lQAx-901hOxSCFIYRsSfqqavIa4Afj/preview',
 		},
 		{
 			id: 15,
-			name: 'Social media',
+			name: 'Geo Filter Snapchat',
 			embedUrl:
-				'https://drive.google.com/file/d/1AypoQ6yPHQdlS7RG5eYYAgX0RCFd-Mbw/preview',
-		},
-		{
-			id: 16,
-			name: 'Social media',
-			embedUrl:
-				'https://drive.google.com/file/d/1KGO4ck4AkHWCOpnpdhQc7yDZAXolhcan/preview',
-		},
-		{
-			id: 17,
-			name: 'Social media',
-			embedUrl:
-				'https://drive.google.com/file/d/1YqaMS-kOnvOOkgY02r3bQ9VYCSFA7bt_/preview',
-		},
-		{
-			id: 18,
-			name: 'Social media',
-			embedUrl:
-				'https://drive.google.com/file/d/1aGYU7LYOz8SGUHYQheC1iq0vqYBU4rOM/preview',
-		},
-		{
-			id: 19,
-			name: 'Social media',
-			embedUrl:
-				'https://drive.google.com/file/d/1wIIfaB2ZwTKoxfHUOp-U4UM-X2vRcz4H/preview',
-		},
-		{
-			id: 20,
-			name: 'Social media',
-			embedUrl:
-				'https://drive.google.com/file/d/1l_BhAa5DWYv5poCyCh6emOro5RqegzKJ/preview',
-		},
-		{
-			id: 21,
-			name: 'Social media',
-			embedUrl:
-				'https://drive.google.com/file/d/1l_0fSxiK4MDTOEN14SKJmXjbgV65KLxF/preview',
+				'https://drive.google.com/file/d/10E8KB7qKEd7e5gforyDVR2NIkN_Jkau2/preview',
 		},
 	],
 
