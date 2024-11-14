@@ -269,10 +269,10 @@ const resumeData = {
 
 	portfolio: [
 		{
-			name: 'Cosmos Community App(*)',
+			name: 'YourStars',
 			description:
-				'Currently working on the Cosmos Community App, where React.js, MongoDB, and Node.js combine to achieve various user interactions.',
-			imgurl: 'https://github.com/driveofhiren',
+				'YourStars is a dynamic platform that connects users through shared astrological influences, fostering community and cosmic conversation. By exploring personalized placements and engaging in meaningful discussions, users can deepen their astrological journey.',
+			imgurl: 'https://yourstars.vercel.app/',
 		},
 		{
 			name: 'ShiftTime(Shift Schedule Application)',
