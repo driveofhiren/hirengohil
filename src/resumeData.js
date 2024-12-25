@@ -163,6 +163,12 @@ const resumeData = {
 	],
 	graphics: [
 		{
+			id: 7,
+			name: 'Social Media',
+			embedUrl:
+				'https://drive.google.com/file/d/1-io_4R8CqXJXUQKHfARDnwmoZTUeAiWl/preview',
+		},
+		{
 			id: 1,
 			name: 'T-Shirt',
 			embedUrl:
@@ -199,12 +205,6 @@ const resumeData = {
 				'https://drive.google.com/file/d/1-sEU3LgQ0zBiS3MzNjRmQAkNl_4gPeN7/preview',
 		},
 
-		{
-			id: 7,
-			name: 'Social Media',
-			embedUrl:
-				'https://drive.google.com/file/d/1-io_4R8CqXJXUQKHfARDnwmoZTUeAiWl/preview',
-		},
 		{
 			id: 8,
 			name: 'Social Media',
