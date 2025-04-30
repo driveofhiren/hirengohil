@@ -287,6 +287,12 @@ const resumeData = {
 			imgurl: 'http://judgementhiren.s3-website.us-east-2.amazonaws.com/',
 		},
 		{
+			name: 'TorpoDect',
+			description:
+				'This Python-based project uses face detection to monitor eyes of driver and detect signs of drowsiness. If the system detects the driver falling asleep, it triggers an emergency alarm to prevent accidents.',
+			imgurl: 'https://github.com/driveofhiren/TorpoDect',
+		},
+		{
 			name: 'Employee Management Portal',
 			description:
 				'The Employee Management Portal utilizes React and GraphQL to efficiently manage employee details.',
@@ -326,41 +332,46 @@ const resumeData = {
 	music: [
 		{
 			id: 1,
+			name: 'LoopChild',
+			imgurl: 'https://open.spotify.com/track/5q8qBWksVF89iALJPs90Iq?si=ac7c651f89004dd2',
+		},
+		{
+			id: 2,
 			name: 'NeuroWeave',
 			imgurl: 'https://open.spotify.com/track/1NYk83B7KjQXyj4PVsW66t',
 		},
 		{
-			id: 2,
+			id: 3,
 			name: 'Tanha',
 			imgurl: 'https://open.spotify.com/track/2ksraD1lL76YJyGGuhyBmk?si=e73781686b5a4090',
 		},
 		{
-			id: 3,
+			id: 4,
 			name: 'Mahiya',
 			imgurl: 'https://open.spotify.com/album/3OVfehhI2muqHQIc4r3wae?si=sfi7XUhiRi2k0kPKp_-dpA',
 		},
 		{
-			id: 4,
+			id: 5,
 			name: 'Masters',
 			imgurl: 'https://open.spotify.com/track/1YzO9G2ubLqj6tBjWfY2jG?si=a337a283b9fe4298',
 		},
 		{
-			id: 5,
+			id: 6,
 			name: 'Masters(Slowed and Reverb)',
 			imgurl: 'https://open.spotify.com/track/49XBPjiXJqMNTtPhZIclwR?si=623fedc5d7524d9e',
 		},
 		{
-			id: 6,
+			id: 7,
 			name: 'Tranquil',
 			imgurl: 'https://open.spotify.com/track/0kY03hvGKov6olyWyg7wey?si=e8457e29a63149ae',
 		},
 		{
-			id: 7,
+			id: 8,
 			name: 'Ashle',
 			imgurl: 'https://open.spotify.com/track/6ct4xQaoDpwIlJuKtvVcCL',
 		},
 		{
-			id: 8,
+			id: 9,
 			name: 'Osho Wave',
 			imgurl: 'https://open.spotify.com/album/20j9Vc4dMVlP3cyabv14D1?si=9i59uigKQVazTvNjm3q7jw',
 		},
