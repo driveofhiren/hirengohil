@@ -44,7 +44,7 @@ export default class Music extends Component {
 							}}
 						></iframe>
 					</div>
-					<h1>
+					{/* <h1>
 						<span>Discography</span>
 					</h1>
 					<div className="player-container">
@@ -66,7 +66,7 @@ export default class Music extends Component {
 								target="_blank"
 							></a>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</section>
 		)
