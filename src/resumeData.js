@@ -48,31 +48,31 @@ const resumeData = {
 			url: 'https://github.com/driveofhiren',
 			className: 'fab fa-github',
 		},
-		{
-			name: 'twitter',
-			url: 'https://twitter.com/spirit_toy',
-			className: 'fab fa-twitter',
-		},
+		// {
+		// 	name: 'twitter',
+		// 	url: 'https://twitter.com/spirit_toy',
+		// 	className: 'fab fa-twitter',
+		// },
 		{
 			name: 'instagram',
 			url: 'https://www.instagram.com/h.gohil/',
 			className: 'fab fa-instagram',
 		},
-		{
-			name: 'soundcloud',
-			url: 'https://soundcloud.com/spirittoy',
-			className: 'fab fa-soundcloud',
-		},
+		// {
+		// 	name: 'soundcloud',
+		// 	url: 'https://soundcloud.com/spirittoy',
+		// 	className: 'fab fa-soundcloud',
+		// },
 		{
 			name: 'youtube',
 			url: 'https://www.youtube.com/channel/UCRN6zHj_YuzDrH9qTw6FMIQ',
 			className: 'fab fa-youtube',
 		},
-		{
-			name: 'spotify',
-			url: 'https://open.spotify.com/artist/4G4Ko6bMdUf1hADOhCkd4c',
-			className: 'fab fa-spotify',
-		},
+		// {
+		// 	name: 'spotify',
+		// 	url: 'https://open.spotify.com/artist/4G4Ko6bMdUf1hADOhCkd4c',
+		// 	className: 'fab fa-spotify',
+		// },
 		{
 			name: 'instagram',
 			url: 'https://www.instagram.com/spirittoymusic/',
