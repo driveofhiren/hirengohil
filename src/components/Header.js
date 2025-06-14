@@ -36,11 +36,11 @@ const Header = ({ resumeData }) => (
 							Graphics
 						</a>
 					</li>
-					<li>
+					{/* <li>
 						<a className="smoothscroll m" href="#productions">
 							Productions
 						</a>
-					</li>
+					</li> */}
 				</ul>
 			</nav>
 
