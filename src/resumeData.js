@@ -22,7 +22,7 @@ const resumeData = {
 				}}
 			>
 				{' '}
-				Graphic Design
+				Data Analytics
 			</span>
 			, and
 			<span
@@ -31,7 +31,7 @@ const resumeData = {
 					margin: '0 5px',
 				}}
 			>
-				Music production
+				Digital Media Production
 			</span>
 			, seamlessly blending my creative instincts with technical
 			expertise.
@@ -124,41 +124,66 @@ const resumeData = {
 	],
 	skillsDescription: 'Your skills here',
 	skills: [
+		// Front-End Development
 		{
-			skillname: 'HTML5,CSS,Tailwind',
+			skillname: 'HTML5, CSS, Tailwind CSS',
 		},
 		{
-			skillname: 'Wordpress',
+			skillname: 'JavaScript, React.js, Next.js',
 		},
 		{
-			skillname: 'React.js,ASP.NET',
+			skillname: 'Figma, Adobe XD, Photoshop, Illustrator, Canva',
 		},
 		{
-			skillname: 'Python, Java, C++,C#',
+			skillname: 'WordPress',
+		},
+
+		// Back-End & Full-Stack Development
+		{
+			skillname: 'Node.js, Express.js, PHP, ASP.NET',
 		},
 		{
-			skillname: 'Node.js, Express.js, PHP',
+			skillname: 'Python (Flask, Django)',
 		},
 		{
-			skillname: 'SQL, MongoDB, Firebase, GraphQL',
+			skillname: 'GraphQL, RESTful APIs',
+		},
+
+		// Databases
+		{
+			skillname: 'SQL, MongoDB, Firebase',
+		},
+
+		// Cloud & DevOps
+		{
+			skillname: 'AWS (EC2, S3, Lambda), Docker, GitHub',
+		},
+
+		// AI, Data & Machine Learning
+		{
+			skillname:
+				'Python (Pandas, NumPy), Generative AI, Prompt Engineering, ML Basics',
+		},
+
+		// System & IT Administration
+		{
+			skillname:
+				'System Administration, Network Fundamentals, ServiceNow',
 		},
 		{
-			skillname: 'Adobe Photoshop, Figma, Canva',
+			skillname:
+				'Hardware/Software Troubleshooting (Windows/macOS/Linux)',
 		},
+
+		// Multimedia & Creative Production
 		{
-			skillname: 'Adobe Illustrator, Adobe XD',
+			skillname:
+				'Adobe Premiere Pro, After Effects, FL Studio, Adobe Audition',
 		},
+
+		// Productivity Tools
 		{
-			skillname: 'FL Studio',
-		},
-		{
-			skillname: 'Adobe Premiere, Adobe Audition',
-		},
-		{
-			skillname: 'Adobe After Effects',
-		},
-		{
-			skillname: 'Microsoft Office Suit',
+			skillname: 'Microsoft Office Suite (Word, Excel, PowerPoint)',
 		},
 	],
 	graphics: [
