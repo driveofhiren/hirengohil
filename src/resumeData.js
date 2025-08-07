@@ -296,7 +296,7 @@ const resumeData = {
 		{
 			name: 'Live Video to Music Generator',
 			description:
-				'A real-time AI-powered application that analyzes live video using YOLO, OpenCV, and Places365 to generate dynamic. It maps objects, scenes, and lighting to musical prompts using generative AI.',
+				'A real-time AI-powered application that analyzes live video using YOLO, OpenCV, and Places365 to generate dynamic music. It maps objects, scenes, and lighting to musical prompts using generative AI.',
 			imgurl: 'https://back-493224371746.us-east1.run.app/',
 		},
 		{
