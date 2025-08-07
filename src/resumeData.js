@@ -294,6 +294,12 @@ const resumeData = {
 
 	portfolio: [
 		{
+			name: 'Live Video to Music Generator',
+			description:
+				'A real-time AI-powered application that analyzes live video using YOLO, OpenCV, and Places365 to generate dynamic. It maps objects, scenes, and lighting to musical prompts using generative AI.',
+			imgurl: 'https://back-493224371746.us-east1.run.app/',
+		},
+		{
 			name: 'YourStars',
 			description:
 				'YourStars is a dynamic platform that connects users through shared astrological influences, fostering community and cosmic conversation. By exploring personalized placements and engaging in meaningful discussions, users can deepen their astrological journey.',
