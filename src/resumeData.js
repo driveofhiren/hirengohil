@@ -75,7 +75,7 @@ const resumeData = {
 		// },
 		{
 			name: 'instagram',
-			url: 'https://www.instagram.com/spirittoymusic/',
+			url: 'https://www.instagram.com/spirit.toy/',
 			className: 'fab fa-instagram',
 		},
 	],
