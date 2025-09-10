@@ -22,7 +22,7 @@ const resumeData = {
 				}}
 			>
 				{' '}
-				Data Analytics
+				IT Support
 			</span>
 			, and
 			<span
