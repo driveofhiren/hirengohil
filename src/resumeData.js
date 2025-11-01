@@ -22,7 +22,7 @@ const resumeData = {
 				}}
 			>
 				{' '}
-				IT Support
+				IT Specialist
 			</span>
 			, and
 			<span
