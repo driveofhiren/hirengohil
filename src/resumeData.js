@@ -49,6 +49,7 @@ const resumeData = {
 			className: 'fab fa-github',
 		},
 		// {
+		//
 		// 	name: 'twitter',
 		// 	url: 'https://twitter.com/spirit_toy',
 		// 	className: 'fab fa-twitter',
