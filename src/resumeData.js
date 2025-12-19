@@ -12,7 +12,7 @@ const resumeData = {
 					margin: '0 5px',
 				}}
 			>
-				Full Stack Development
+				IT Systems & Infrastructure
 			</span>
 			,
 			<span
@@ -22,7 +22,7 @@ const resumeData = {
 				}}
 			>
 				{' '}
-				IT Specialist
+				Full Stack Development
 			</span>
 			, and
 			<span
@@ -49,7 +49,7 @@ const resumeData = {
 			className: 'fab fa-github',
 		},
 		// {
-		//
+
 		// 	name: 'twitter',
 		// 	url: 'https://twitter.com/spirit_toy',
 		// 	className: 'fab fa-twitter',
