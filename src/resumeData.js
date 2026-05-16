@@ -5,41 +5,7 @@ const resumeData = {
 	cv: 'https://drive.google.com/file/d/1s5KAkCp5Oa4t-nz1BMXVxuhjjgk1nfXF/view?usp=drive_link',
 	roleDescription: (
 		<p style={{ fontSize: '26px' }}>
-			Dear [Manager's Name], As I transition out, I wanted to share some
-			feedback with the hope that it may be of value to the team. I also
-			want to sincerely acknowledge the warnings and violations during my
-			tenure — I take full responsibility for those, and I regret any
-			disruption they caused. --- 1. iOS Care Transfer Issue This concern
-			was raised multiple times over several months. The incorrect
-			transfer rate from iOS Care reached approximately 32%, and its
-			effect on Credit Operations was significant: • Customers who had
-			already waited 2–3 hours were transferred to us without context or
-			clear reason • Agents spent a considerable portion of their time
-			re-explaining, re-transferring, and managing out-of-scope calls —
-			contributing to roughly 50% productivity loss and visible team
-			burnout What made this particularly difficult was a trust issue on
-			the customer side. When reviewing interaction notes, many customers
-			had already spoken with multiple departments — everyone except Care.
-			By the time they reached us, they were exhausted and sceptical.
-			Convincing them that their issue would be resolved felt nearly
-			impossible when the root concern in Care remained unaddressed.
-			Resolving the upstream issue in Care first would make a meaningful
-			difference — not just in transfer rates, but in the customer's
-			willingness to trust the process. 2. Systems and Tools • OneView
-			frequently failed to load more than 2 bills, limiting our ability to
-			support customers who needed billing history reviewed • Payment
-			systems dropped mid-call regularly, requiring reconnection and
-			disrupting an already fragile customer experience • Recent UI
-			updates increased scroll depth, replaced dropdowns with manual
-			entry, and placed offer sections above the core account details
-			agents need most • Access restrictions, while understandable in
-			intent, added friction to routine tasks None of these individually
-			seem significant — but across a full day of calls, they compound
-			quietly and show up in agent energy, focus, and the overall quality
-			of customer interactions. --- I share this humbly and with genuine
-			care for the team I am leaving behind. I hope some of it is useful.
-			It has been a meaningful experience, and I am grateful for the time
-			here. Thank you sincerely. [Your Name]
+			I am a skilled professional, adept in the realms of
 			<span
 				style={{
 					color: '#312244',
