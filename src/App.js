@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Header from './components/Header'
 import Resume from './components/Resume'
-import Music from './components/Music'
 import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
 import resumeData from './resumeData'
