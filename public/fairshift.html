@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ShiftBuddy – Option Board</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;--bg:#f3f6f8;--fg:#15202b;--mut:#5a6b7b;--card:#fff;--line:#d8e0e6;--acc:#0f766e;--ok:#14532d;--okb:#d9f2e3;--bad:#8f1d1d;--badb:#fde2e2;--wr:#7a4a05;--wrb:#fdf0cf;--a:#1e40af;--ab:#dbe7fd;--b:#6b21a8;--bb:#efe2fd;--c:#92400e;--cb:#fde9cc}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0f171d;--fg:#e6eef2;--mut:#93a5b3;--card:#17222a;--line:#26353f;--acc:#4fd1c0;--ok:#8fe3ae;--okb:#143324;--bad:#f4a3a3;--badb:#3d1b1b;--wr:#f2cf86;--wrb:#3a2f13;--a:#a9c4ff;--ab:#1a2a4d;--b:#d9b8ff;--bb:#2e1c47;--c:#f6c98d;--cb:#42290f}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0f171d;--fg:#e6eef2;--mut:#93a5b3;--card:#17222a;--line:#26353f;--acc:#4fd1c0;--ok:#8fe3ae;--okb:#143324;--bad:#f4a3a3;--badb:#3d1b1b;--wr:#f2cf86;--wrb:#3a2f13;--a:#a9c4ff;--ab:#1a2a4d;--b:#d9b8ff;--bb:#2e1c47;--c:#f6c98d;--cb:#42290f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+.w{max-width:1100px;margin:0 auto;padding:14px}
+h1{font-size:22px;margin:0}
+.sub{color:var(--mut);font-size:12.5px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+button,select,input{font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 9px}
+button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}
+:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+button.p{background:var(--acc);border-color:var(--acc);color:var(--bg);font-weight:700}
+.tabs{display:flex;gap:2px;overflow-x:auto;border-bottom:1px solid var(--line);margin-top:8px}
+.tabs button{border:0;border-radius:8px 8px 0 0;background:none;color:var(--mut);white-space:nowrap}
+.tabs button.on{color:var(--acc);font-weight:700;box-shadow:inset 0 -3px var(--acc)}
+.c{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0}
+.sc{overflow-x:auto}
+table{border-collapse:collapse;width:100%}
+th,td{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+th{font-size:12px;color:var(--mut);font-weight:600}
+.ok{background:var(--okb);color:var(--ok)}.bad{background:var(--badb);color:var(--bad)}.wr{background:var(--wrb);color:var(--wr)}
+td.ok,td.bad,td.wr{text-align:center}
+.b{display:inline-block;border-radius:99px;padding:1px 9px;font-size:12px;font-weight:600}
+.msg{border-radius:8px;padding:9px 12px;margin:10px 0}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.row>.c{flex:1 1 200px;margin:6px 0}
+.mm{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-top:6px}
+.mm i{height:14px;border-radius:3px;border:1px solid var(--line)}
+.ch{display:inline-block;min-width:26px;text-align:center;border-radius:6px;padding:1px 6px;margin-right:3px;font-weight:700}
+.tA{background:var(--ab);color:var(--a)}.tB{background:var(--bb);color:var(--b)}.tC{background:var(--cb);color:var(--c)}
+.oc{cursor:pointer}.oc.on{outline:2px solid var(--acc)}
+.ch.big{font-size:20px;padding:4px 12px}
+.mb.sA{background:var(--ab);color:var(--a);border-color:var(--a);font-weight:700}
+.mb.sB{background:var(--bb);color:var(--b);border-color:var(--b);font-weight:700}
+.mb.sC{background:var(--cb);color:var(--c);border-color:var(--c);font-weight:700}
+.mb.oth{color:var(--mut);border-style:dashed}
+.cnt{display:inline-block;border-radius:99px;padding:0 9px;font-size:12px;font-weight:700;margin-left:4px}
+</style></head><body><div class="w">
+<h1>ShiftBuddy</h1>
+<div class="sub">22 agents, coverage 8:00 AM to 8:00 PM. Pick one of 10 four-month options and watch the seats fill on the Seat map. Every combination keeps coverage on target, and the next window carries each agent’s weekend history forward.</div>
+<div class="tabs" id="tabs"></div><div id="app"></div>
+<div class="sub" id="foot" style="margin:14px 0"></div>
+</div>
+<script>
+const N=22,IDX=[...Array(N).keys()],D=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],ORD=[1,2,3,4,5,6,0],
+OFF=[[6,0],[0,1],[1,2],[2,3],[3,4],[4,5],[5,6]],CNT=[[3,3,3],[1,1,1],[1,0,1],[0,1,1],[1,1,0],[0,1,1],[1,0,1]],
+TY=[0,1,2,2,2,2,1],TG=[9,5,8],TD=['Sat–Sun off','Sun–Mon or Fri–Sat off','Midweek off (Mon–Tue, Tue–Wed, Wed–Thu or Thu–Fri)'],
+SH=[['Early','8:00–4:30',8,16.5],['Mid','9:00–5:30',9,17.5],['Late','11:30–8:00',11.5,20]],SL=[],
+OPT=[['1a','AABC',3],['1b','ABCA',3],['1c','BCAA',3],['1d','CAAB',3],['2a','ABCC',2],['2b','BCCA',2],['2c','CCAB',2],['2d','CABC',2],['3a','AACC',1],['3b','CCAA',1]];
+CNT.forEach((r,p)=>r.forEach((n,s)=>{for(let i=0;i<n;i++)SL.push({p,s})}));
+const REQ=D.map((_,d)=>[0,1,2].map(s=>SL.filter(x=>x.s==s&&!OFF[x.p].includes(d)).length));
+const $=id=>document.getElementById(id),sum=x=>x.reduce((a,b)=>a+b,0),opt=id=>OPT.find(o=>o[0]==id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';');
+const offN=p=>D[OFF[p][0]]+'–'+D[OFF[p][1]];
+const mk=(s,k)=>{const[y,m]=s.split('-').map(Number),d=new Date(y,m-1+k,1);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')};
+const ml=m=>{const[y,n]=m.split('-');return new Date(y,n-1,1).toLocaleString('en',{month:'short',year:'numeric'})};
+const chips=s=>[...s].map(x=>`<span class="ch t${x}">${x}</span>`).join('');
+const A1=o=>[...o[1]].filter(x=>x=='A').length<2,pk=i=>(ST.setup.ag[i].c?-100:0)+(ST.setup.ag[i].a||0);
+const ST={setup:{ag:{}},board:{sel:{},t:{},l:{}}},ex={};
+IDX.forEach(i=>ST.setup.ag[i]={n:'Agent '+(i+1),g:0,a:0});
+let SM=mk(new Date().toISOString().slice(0,7),1),DB=null,TL=true,T=0,CM=0,PV='',SW=-1,ERR='',ld=0,slow=0,seen=0,ME=-1,Q=Promise.resolve(),EF={},RS={},WL=[],MO=[];
+try{const v=localStorage.getItem('sb_me');ME=v==null?-1:+v}catch(e){}
+const mon=k=>mk(ST.board.start||SM,k),lab=k=>ml(mon(k)),ty=(i,k)=>'ABC'.indexOf(opt(EF[i])[1][k]);
+const mrg=(o,p)=>{for(const k in p){if(p[k]&&typeof p[k]=='object'){o[k]=o[k]||{};mrg(o[k],p[k])}else o[k]=p[k]}};
+function wr(d,patch,full){
+ if(full)ST[d]=full;else mrg(ST[d],patch);
+ render();
+ if(!DB){try{localStorage.setItem('sb3',JSON.stringify(ST))}catch(e){}return}
+ Q=Q.then(async()=>{try{const r=DB.doc(d+'/main');if(full||!ex[d])await r.set(ST[d]);else await r.update(patch);ex[d]=1;ERR=''}catch(e){ERR='Could not save ('+(e.code||'error')+'). You may have view-only access.';render()}});
+}
+const setMe=v=>{ME=v;try{localStorage.setItem('sb_me',v)}catch(e){}render()};
+const up=(i,k,v)=>wr('setup',{ag:{[i]:{[k]:v}}});
+const pick=id=>wr('board',{sel:{[ME]:id},t:{[ME]:Date.now()}});
+const swp=()=>{const S=ST.board.sel,t=ST.board.t,a=ME,b=SW;wr('board',{sel:{[a]:S[b],[b]:S[a]},t:{[a]:t[b]||0,[b]:t[a]||0},l:{[Date.now()]:{a,b}}});SW=-1};
+function derive(){
+ const B=ST.board,S=B.sel||{},Tm=B.t||{},ag=ST.setup.ag,R={},ef={},w=[];OPT.forEach(o=>R[o[0]]=[]);
+ IDX.filter(i=>R[S[i]]).sort((x,y)=>pk(x)-pk(y)||(Tm[x]||0)-(Tm[y]||0)||x-y).forEach(i=>{const o=opt(S[i]);if(R[o[0]].length<o[2]&&!(ag[i].c&&A1(o))){R[o[0]].push(i);ef[i]=o[0]}else w.push(i)});
+ EF=ef;RS=R;WL=w;
+ const ct=IDX.map(()=>({p:{},s:{}}));MO=[];
+ for(let k=0;k<4;k++){const M={};
+  for(let t=0;t<3;t++){const F=SL.map((_,j)=>j).filter(j=>TY[SL[j].p]==t);
+   IDX.filter(i=>EF[i]&&ty(i,k)==t).sort((x,y)=>ag[x].g-ag[y].g||x-y).forEach(i=>{
+    const mt=IDX.filter(m=>m!=i&&ag[i].g&&ag[m].g==ag[i].g&&M[m]!=null);let bj=-1,bc=1e9;
+    F.forEach((j,x)=>{const s=SL[j],c=(ct[i].p[s.p]||0)+.7*(ct[i].s[s.s]||0)-sum(mt.map(m=>(SL[M[m]].p==s.p?.6:0)+(SL[M[m]].s==s.s?.3:0)));if(c<bc){bc=c;bj=x}});
+    if(bj<0)return;const j=F.splice(bj,1)[0],s=SL[j];M[i]=j;ct[i].p[s.p]=(ct[i].p[s.p]||0)+1;ct[i].s[s.s]=(ct[i].s[s.s]||0)+1})}
+  MO.push(M)}
+}
+const fill=k=>[0,1,2].map(t=>IDX.filter(i=>EF[i]&&ty(i,k)==t).length);
+const cov=(k,d)=>[0,1,2].map(s=>IDX.filter(i=>{const j=MO[k][i];return j!=null&&SL[j].s==s&&!OFF[SL[j].p].includes(d)}).length);
+const nameOpts=(sel,ph)=>`<option value="-1">${ph}</option>`+IDX.map(i=>`<option value="${i}"${i==sel?' selected':''}>${esc(ST.setup.ag[i].n)}</option>`).join('');
+const who=()=>`<div class="bar"><b>I am</b><select aria-label="I am" onchange="setMe(+this.value)">${nameOpts(ME,'Choose your name')}</select></div>`;
+const mates=i=>{const g=ST.setup.ag[i].g;return g?IDX.filter(m=>m!=i&&ST.setup.ag[m].g==g):[]};
+
+function vPick(){
+ const ag=ST.setup.ag,B=ST.board,pv=PV||EF[ME]||'';
+ const meters=[0,1,2,3].map(k=>{const f=fill(k);return`<div class="c"><b>${lab(k)}</b><div class="sub">${[0,1,2].map(t=>`<span class="ch t${'ABC'[t]}">${'ABC'[t]}</span>${f[t]}/${TG[t]}`).join(' ')}</div></div>`}).join('');
+ let pan='<div class="c sub">Tap an option to preview your four months and your buddy group.</div>';
+ if(pv){const o=opt(pv),M=mates(ME),f=[0,1,2,3].map(k=>fill(k));
+  const mine=EF[ME]==pv;
+  const mo=[0,1,2,3].map(k=>{const t='ABC'.indexOf(o[1][k]),left=TG[t]-f[k][t]+(mine?1:0);return`<div class="c"><b>${lab(k)}</b><div><span class="ch big t${o[1][k]}">${o[1][k]}</span></div><div class="sub">${TD[t]}</div><div class="sub">${left} of ${TG[t]} ${o[1][k]} places open this month</div></div>`}).join('');
+  const rows=[ME,...M].map(i=>{const oi=i==ME?pv:EF[i];return`<tr><td>${i==ME?'<b>You</b> (preview '+pv+')':esc(ag[i].n)}</td>${[0,1,2,3].map(k=>`<td>${oi?chips(opt(oi)[1][k]):'<span class="sub">no pick</span>'}</td>`).join('')}</tr>`}).join('');
+  const tg=M.length?`<tr><th>Same type</th>${[0,1,2,3].map(k=>{const l=[ME,...M].map(i=>(i==ME?pv:EF[i])?opt(i==ME?pv:EF[i])[1][k]:'-').filter(x=>x!='-'),c=Math.max(0,...'ABC'.split('').map(x=>l.filter(y=>y==x).length));return`<th>${c} of ${M.length+1} together</th>`}).join('')}</tr>`:'';
+  pan=`<div class="c"><b>Preview: option ${pv}</b> <span>${chips(o[1])}</span><div class="row">${mo}</div>${M.length?`<div class="sc"><table><tr><th>Buddy group</th>${[0,1,2,3].map(k=>`<th>${lab(k)}</th>`).join('')}</tr>${rows}${tg}</table></div><div class="sub">Buddies on the same letter share the same days off. Buddies on different options will be apart in some months.</div>`:'<div class="sub">You are not in a buddy group. Add one in Setup to see how friends line up.</div>'}</div>`}
+ const cards=OPT.map(o=>{const h=RS[o[0]]||[],full=h.length>=o[2],mine=EF[ME]==o[0],can=(!full||(ME>=0&&h.some(i=>pk(i)>pk(ME))))&&!(ME>=0&&ag[ME].c&&A1(o));
+  return`<div class="c oc${pv==o[0]?' on':''}" onclick="PV='${o[0]}';render()"><div class="bar" style="margin:0"><b>${o[0]}</b>${chips(o[1])}</div><div class="sub">${h.length}/${o[2]} taken${h.length?': '+h.map(i=>esc(ag[i].n)+(mates(ME).includes(i)?' (buddy)':'')).join(', '):''}</div>${ME>=0?`<div style="margin-top:6px">${mine?`<button onclick="event.stopPropagation();pick('')">Release my seat</button>`:`<button class="p"${can&&!B.lock?'':' disabled'} onclick="event.stopPropagation();pick('${o[0]}')">${full&&can?'Choose (priority)':full?'Full':'Choose'}</button>`}</div>`:''}</div>`}).join('');
+ const lost=ME>=0&&WL.includes(ME)?`<div class="msg bad">Your seat in option ${esc(B.sel[ME])} went to a colleague with fewer weekend months. Please choose another option.</div>`:'';
+ return who()+(B.lock?'<div class="msg wr">Picks are locked by the team lead. You can still swap in My plan.</div>':'')+lost+`<div class="sub">Letters: <span class="ch tA">A</span>Sat–Sun off <span class="ch tB">B</span>Sun–Mon or Fri–Sat off <span class="ch tC">C</span>midweek off. Exact days and shift time are assigned automatically and rotate. ${sum(Object.values(EF).map(()=>1))} of ${N} agents have a seat. If an option is full, an agent with fewer past A months gets priority.</div><div class="row">${meters}</div>${pan}<div class="row">${cards}</div>`}
+
+function vMine(){
+ if(ME<0)return who();
+ const ag=ST.setup.ag,B=ST.board;
+ if(!EF[ME])return who()+'<div class="c">You have no seat yet. Go to <b>Pick</b> and choose an option.</div>';
+ const cards=[0,1,2,3].map(k=>{const j=MO[k][ME],s=SL[j],t=ty(ME,k),w=IDX.filter(i=>i!=ME&&MO[k][i]!=null&&SL[MO[k][i]].p==s.p).map(i=>esc(ag[i].n));
+  return`<div class="c"><b>${lab(k)}</b> <span class="ch t${'ABC'[t]}">${'ABC'[t]}</span><div style="font-size:16px;margin:6px 0"><b>${offN(s.p)} off</b></div><div>${SH[s.s][0]} shift, ${SH[s.s][1]}</div><div class="sub">Off with: ${w.join(', ')||'nobody else'}</div></div>`}).join('');
+ const both=IDX.filter(i=>i!=ME&&EF[i]);
+ const lg=Object.entries(B.l||{}).sort((x,y)=>y[0]-x[0]).slice(0,8).map(([t,r])=>`<tr><td>${new Date(+t).toLocaleDateString('en',{month:'short',day:'numeric'})}</td><td>${esc(ag[r.a].n)} swapped options with ${esc(ag[r.b].n)}</td></tr>`).join('');
+ return who()+`<div class="c"><b>Option ${EF[ME]}</b> ${chips(opt(EF[ME])[1])}<div class="sub">Exact days off and shift times may be adjusted until the team lead locks the board.</div></div><div class="row">${cards}</div>
+<div class="c"><b>Swap my whole option with a colleague</b><div class="sub">Agree first. It happens instantly and coverage stays the same.</div><div class="bar"><select aria-label="Colleague" onchange="SW=+this.value;render()"><option value="-1">Colleague</option>${both.map(i=>`<option value="${i}"${i==SW?' selected':''}>${esc(ag[i].n)} (${EF[i]})</option>`).join('')}</select><button class="p"${SW>=0?'':' disabled'} onclick="swp()">Swap</button></div></div>
+<div class="c sc"><b>Recent swaps</b><table>${lg||'<tr><td class="sub">No swaps yet.</td></tr>'}</table></div>`}
+
+function vCov(){const {Y}=draft(),MY=ysl(Y),K=[...Array(12).keys()],cv=(k,d)=>covY(MY,k,d),fl=k=>Object.keys(MY[k]).length;
+ const mini=k=>{const cells=[0,1,2].map(s=>ORD.map(d=>{const c=cv(k,d)[s],r=REQ[d][s],q=r?c/r:1;return`<i style="background:${q?`rgba(22,163,74,${.2+.7*q})`:'var(--badb)'}" title="${D[d]} ${SH[s][0]}: ${c}/${r}"></i>`}).join('')).join('');
+  return`<div class="c" style="cursor:pointer${k==CM?';outline:2px solid var(--acc)':''}" onclick="CM=${k};render()"><b>${lab(k)}</b> <span class="sub">${Math.round(fl(k)/N*100)}% seats filled</span><div class="mm">${cells}</div></div>`};
+ const cl=(x,r)=>x>=r?'ok':x?'wr':'bad',hs=[...Array(12).keys()].map(x=>x+8);
+ const hr=(c,h)=>c.reduce((t,q,s)=>t+(Math.min(SH[s][3],h+1)-Math.max(SH[s][2],h)>=.5?q:0),0);
+ const tr=ORD.map(d=>{const x=cv(CM,d),r=REQ[d];return`<tr><th>${D[d]}</th>${[0,1,2].map(s=>`<td class="${cl(x[s],r[s])}">${x[s]}/${r[s]}</td>`).join('')}<td class="${cl(sum(x),sum(r))}"><b>${sum(x)}/${sum(r)}</b></td>${hs.map(h=>`<td class="${cl(hr(x,h),hr(r,h))}">${hr(x,h)}</td>`).join('')}</tr>`}).join('');
+ const bal=K.map(k=>`<tr><th>${lab(k)}</th>${['A','B','C'].map((L,t)=>{const v=IDX.filter(i=>Y[i][k]==L).length;return`<td class="${v>=TG[t]?'ok':'wr'}">${L} ${v}/${TG[t]}</td>`}).join('')}</tr>`).join('');
+ return`<div class="sub">This view is built from the Year plan draft and your base table. Each box is one month: rows are Early, Mid, Late and columns are Mon to Sun. Green is covered, red means nobody covers that shift. Tap a month for details.</div><div class="row">${K.map(mini).join('')}</div>
+<div class="c sc"><b>${lab(CM)}: scheduled / required</b> <span class="sub">Hour columns count agents on shift for at least half of that hour.</span>
+<table><tr><th>Day</th><th>Early</th><th>Mid</th><th>Late</th><th>Total</th>${hs.map(h=>`<th>${h%12||12}${h<12?'a':'p'}</th>`).join('')}</tr>${tr}</table></div>
+<div class="c sc"><b>Seats per type, every month</b><table>${bal}</table></div>`}
+
+function vTeam(){
+ const ag=ST.setup.ag,B=ST.board;
+ const rows=IDX.map(i=>{const o=EF[i];const c=o?[0,1,2].map(t=>[...opt(o)[1]].filter(x=>x=='ABC'[t]).length):['','',''];
+  return`<tr><td>${esc(ag[i].n)}${ag[i].g?' <span class="sub">G'+ag[i].g+'</span>':''}</td><td>${o||'<span class="sub">no pick</span>'}</td>${[0,1,2,3].map(k=>`<td>${o?chips(opt(o)[1][k])+`<span class="sub">${offN(SL[MO[k][i]].p)}</span>`:''}</td>`).join('')}<td>${c[0]}</td><td>${c[1]}</td><td>${c[2]}</td></tr>`}).join('');
+ const pend=IDX.filter(i=>!EF[i]).map(i=>esc(ag[i].n)),gs={};
+ IDX.forEach(i=>{const g=ag[i].g;if(g)(gs[g]=gs[g]||[]).push(i)});
+ const gl=Object.entries(gs).filter(([,m])=>m.length>1).map(([g,m])=>`<div class="sub">Group ${g} (${m.map(i=>esc(ag[i].n)).join(', ')}): same days off in ${[0,1,2,3].filter(k=>m.every(i=>EF[i]&&ty(i,k)==ty(m[0],k))).length} of 4 months.</div>`).join('');
+ return`<div class="c sc"><table><tr><th>Agent</th><th>Option</th>${[0,1,2,3].map(k=>`<th>${lab(k)}</th>`).join('')}<th>A</th><th>B</th><th>C</th></tr>${rows}</table></div>
+<div class="c"><b>No seat yet (${pend.length}):</b> ${pend.join(', ')||'everyone has a seat'}</div>${WL.length?`<div class="msg wr">Waiting for a new option: ${WL.map(i=>esc(ag[i].n)).join(', ')}</div>`:''}${gl}`}
+
+function vSet(){
+ const ag=ST.setup.ag,B=ST.board,gl=['None',...[1,2,3,4,5,6,7,8,9,10].map(q=>'Group '+q)];
+ return`<div class="c"><b>Team setup</b><div class="sub">Groups can be any size. Buddies are placed on the same days off whenever the options allow it. “Past A months” is the tie-break when an option is full: fewer past A months gets priority.</div>
+${TL?`<div class="bar">First month <input type="month" value="${B.start||SM}" aria-label="First month" onchange="wr('board',{start:this.value||SM})"><button class="p" onclick="wr('board',{lock:${B.lock?0:1}})">${B.lock?'Unlock picks':'Lock picks'}</button><button onclick="if(confirm('Clear all picks and swaps?'))wr('board',null,{start:ST.board.start||SM,sel:{},t:{},l:{},lock:0,win:ST.board.win||1})">Clear all picks</button><button class="p" onclick="roll()">Close window, open next</button><button onclick="resetAll()">Clear all data, start again</button></div>`:'<div class="sub" style="margin-top:6px">Only the team lead can lock or clear picks.</div>'}</div>
+<div class="c sc"><table><tr><th>#</th><th>Name</th><th>Buddy group</th><th>Past A months</th></tr>${IDX.map(i=>`<tr><td>${i+1}</td><td><input value="${esc(ag[i].n)}" aria-label="Name" onchange="up(${i},'n',this.value)"></td><td><select aria-label="Group" onchange="up(${i},'g',+this.value)">${gl.map((x,q)=>`<option value="${q}"${q==ag[i].g?' selected':''}>${x}</option>`).join('')}</select></td><td><input type="number" min="0" max="60" style="width:70px" value="${ag[i].a||0}" aria-label="Past A months" onchange="up(${i},'a',+this.value||0)"></td></tr>`).join('')}</table></div>`}
+
+function roll(){if(!confirm('Close this window and open the next one? Weekend months go into each agent’s history, 1-weekend agents get catch-up priority, and everyone picks again.'))return;
+ const ag=ST.setup.ag,u={};IDX.forEach(i=>{const o=EF[i]&&opt(EF[i]),a=o?[...o[1]].filter(x=>x=='A').length:0;u[i]={a:(ag[i].a||0)+a,c:o&&a<2?1:0}});
+ const st=mon(4),w=(ST.board.win||1)+1;wr('setup',{ag:u});wr('board',null,{start:st,sel:{},t:{},l:{},lock:0,win:w})}
+function vGame(){
+ const ag=ST.setup.ag,ini=i=>esc(ag[i].n.split(/\s+/).map(w=>w[0]||'').join('').slice(0,3).toUpperCase()),taken=Object.keys(EF).length,left=o=>o[2]-(RS[o[0]]||[]).length;
+ const rows=OPT.map(o=>{const h=RS[o[0]]||[],a=[...o[1]].filter(x=>x=='A').length,seats=[...Array(o[2]).keys()].map(q=>h[q]!=null?`<span class="ch ${h[q]==ME?'tA':'ok'}" title="${esc(ag[h[q]].n)}">${ini(h[q])}</span>`:`<span class="ch" style="border:1px dashed var(--mut);color:var(--mut)">+</span>`).join('');
+  return`<div class="c oc" onclick="PV='${o[0]}';T=1;render()"><b>${o[0]}</b> ${chips(o[1])}<span class="sub"> ${a} Sat–Sun months · ${left(o)?left(o)+' seat'+(left(o)>1?'s':'')+' left':'full'}</span><div style="margin-top:6px">${seats}</div></div>`}).join('');
+ const wait=IDX.filter(i=>!EF[i]).sort((x,y)=>pk(x)-pk(y)),m=ME>=0?ag[ME]:null;
+ let mv='<div class="c sub">Choose your name above to see your moves.</div>';
+ if(m){const open=OPT.filter(o=>left(o)>0&&!(m.c&&A1(o)));
+  mv=`<div class="c"><b>Your moves</b><div class="sub">${EF[ME]?`You hold option ${EF[ME]}. Swap with a colleague in My plan, or release it in Pick.`:`No seat yet. Open now: ${open.map(o=>o[0]+' ('+left(o)+')').join(', ')||'nothing, wait for a release'}.`}${m.c?' Catch-up: your last window had 1 weekend month, so you have priority on 2-weekend options and can’t take a 1-weekend one.':''}</div></div>`}
+ return who()+`<div class="c"><b>${taken} of ${N} seats taken</b><div class="mm" style="grid-template-columns:repeat(22,1fr)">${IDX.map(i=>`<i style="background:${EF[i]?'var(--acc)':'transparent'}"></i>`).join('')}</div><div class="sub">${wait.length?`${wait.length} still choosing. First in line: ${wait.slice(0,3).map(i=>esc(ag[i].n)).join(', ')}.`:'All 22 seats are filled. The schedule is ready.'}</div></div>${mv}<div class="row">${rows}</div>`}
+const CAP={A:9,B:5,C:8};
+function ordr(){const o=(ST.board.ord?String(ST.board.ord).split(',').map(Number):[]).filter((v,x,r)=>v>=0&&v<N&&r.indexOf(v)==x);if(!o.length)o.push(...IDX.slice().sort((x,y)=>pk(x)-pk(y)||x-y));IDX.forEach(i=>{if(!o.includes(i))o.push(i)});return o}
+function drawOrd(){const g=i=>ST.setup.ag[i].c?0:1,a=IDX.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}a.sort((x,y)=>g(x)-g(y));wr('board',{ord:a.join(',')})}
+/* Each agent's limits follow the draft order, so picks and auto-fill obey the same caps:
+   A5 B2 C5 (first 6 in order), A5 B3 C4 (middle 14), A4 B3 C5 (last 2). Totals stay 9 A / 5 B / 8 C every month. */
+const tgt=i=>{const pos=ordr().indexOf(i),A=pos>=N-2?4:5,B=N-1-pos<16?3:2;return{pa:A,pb:B,pc:12-A-B}},lim=(k,i)=>tgt(i)[k];
+const PR=['pa','pb','pc'],PL={pa:'A',pb:'B',pc:'C'};
+const rw=(k,i)=>{const c=(ST.board[k]||{})[i];return c?String(c).split(',').filter(x=>x!=='').map(Number).filter((v,x,r)=>v>=0&&v<12&&r.indexOf(v)==x):[]};
+/* Clean list for one letter: a month already used by an earlier letter (A, then B, then C) is dropped, and the list is cut at its limit, so old or odd saved data can never double-book a month or go over A5 B2 C5. */
+const rkOf=(k,i)=>{const used=PR.slice(0,PR.indexOf(k)).flatMap(x=>rkOf(x,i));return rw(k,i).filter(v=>!used.includes(v)).slice(0,lim(k,i))};
+const othOf=(k,i)=>PR.filter(x=>x!=k).flatMap(x=>rkOf(x,i));
+function draft(){const ord=ordr(),Y=IDX.map(()=>Array(12).fill('')),part=i=>ST.board.auto||rkOf('pa',i).length||rkOf('pb',i).length||rkOf('pc',i).length;
+ const fix=(L,od,tg,cnt)=>od.forEach(i=>{while(Y[i].filter(v=>v==L).length<tg(i)){let ok=0;for(let x=0;x<12&&!ok;x++){if(cnt[x]>=CAP[L])continue;if(!Y[i][x]){Y[i][x]=L;cnt[x]++;ok=1;break}
+  for(const j of IDX){if(Y[j][x])continue;const y=Y[j].findIndex((v,q)=>v==L&&!Y[i][q]);if(y>=0){Y[j][y]='';Y[j][x]=L;Y[i][y]=L;cnt[x]++;ok=1;break}}}if(!ok)break}});
+ const run=(L,od,tg,k,rounds)=>{const cnt=Array(12).fill(0);for(let r=0;r<rounds;r++)(r%2?od.slice().reverse():od).forEach(i=>{if(tg(i)<=r)return;let m=rkOf(k,i).find(x=>x>=0&&x<12&&!Y[i][x]&&cnt[x]<CAP[L]);if(m==null){const ot=othOf(k,i);m=-1;for(const strict of [1,0]){for(let x=0;x<12;x++)if(!Y[i][x]&&cnt[x]<CAP[L]&&!(strict&&ot.includes(x))&&(m<0||cnt[x]<cnt[m]))m=x;if(m>=0)break}}if(m>=0){Y[i][m]=L;cnt[m]++}});fix(L,od,tg,cnt)};
+ run('A',ord.filter(part),i=>ord.indexOf(i)>=N-2?4:5,'pa',5);
+ const bo=ord.slice().reverse();run('B',bo.filter(part),i=>bo.indexOf(i)<16?3:2,'pb',3);
+ Y.forEach((y,i)=>{if(part(i))y.forEach((x,m)=>{if(!x)y[m]='C'})});return{Y,ord}}
+function togP(k,m){if(ME<0||ST.board.lock)return;const L={};PR.forEach(x=>L[x]=rkOf(x,ME));const l=L[k],p=l.indexOf(m);
+ if(p>=0)l.splice(p,1);
+ else{if(l.length>=lim(k,ME))return;PR.forEach(x=>{if(x!=k){const q=L[x].indexOf(m);if(q>=0)L[x].splice(q,1)}});l.push(m)}
+ const patch={};PR.forEach(x=>patch[x]={[ME]:L[x].join(',')});wr('board',patch)}
+function resetAll(){if(!confirm('Clear ALL data and start again? This removes every pick, ranking, draft order, swap and past A history, and resets the names to Agent 1 to 22. It cannot be undone.'))return;
+ const ag={};IDX.forEach(i=>ag[i]={n:'Agent '+(i+1),g:0,a:0});const st=ST.board.start||SM;
+ wr('setup',null,{ag});wr('board',null,{start:st,sel:{},t:{},l:{},lock:0,win:1});ME=-1}
+function closeYear(){if(!confirm('Close the year? Weekend months go into history, agents with only 4 A get first draft position next year, and rankings are cleared.'))return;
+ const ag=ST.setup.ag,{Y}=draft(),u={};IDX.forEach(i=>{const a=Y[i].filter(x=>x=='A').length;u[i]={a:(ag[i].a||0)+a,c:a<5?1:0}});
+ const st=mon(12),w=(ST.board.win||1)+1;wr('setup',{ag:u});wr('board',null,{start:st,sel:{},t:{},l:{},lock:0,win:w})}
+let YC=0;
+function ysl(Y){const ct=IDX.map(()=>({p:{},s:{}})),MY=[];
+ for(let m=0;m<12;m++){const M={};for(let t=0;t<3;t++){const F=SL.map((_,j)=>j).filter(j=>TY[SL[j].p]==t);
+  IDX.filter(i=>Y[i][m]=='ABC'[t]).sort((x,y)=>((x+m)%N)-((y+m)%N)).forEach(i=>{let bj=-1,bc=1e9;F.forEach((j,x)=>{const q=SL[j],c=.5*(ct[i].p[q.p]||0)+2*(ct[i].s[q.s]||0);if(c<bc){bc=c;bj=x}});if(bj<0)return;const j=F.splice(bj,1)[0],q=SL[j];M[i]=j;ct[i].p[q.p]=(ct[i].p[q.p]||0)+1;ct[i].s[q.s]=(ct[i].s[q.s]||0)+1})}MY.push(M)}return MY}
+const covY=(MY,m,d)=>[0,1,2].map(s=>IDX.filter(i=>{const j=MY[m][i];return j!=null&&SL[j].s==s&&!OFF[SL[j].p].includes(d)}).length);
+function covSec(Y){const MY=ysl(Y),K=[...Array(12).keys()],mn=k=>ml(mon(k)).split(' ')[0],cl=(x,r)=>x>=r?'ok':x?'wr':'bad';
+ const miss=m=>{let n=0;for(let d=0;d<7;d++){const c=covY(MY,m,d);for(let s=0;s<3;s++)n+=Math.max(0,REQ[d][s]-c[s])}return n};
+ const strip=K.map(m=>{const x=miss(m);return`<button class="${x?'bad':'ok'}" style="${m==YC?'outline:2px solid var(--acc)':''}" onclick="YC=${m};render()">${mn(m)} ${x?'missing '+x:'full'}</button>`}).join(' ');
+ const tr=ORD.map(d=>{const c=covY(MY,YC,d),r=REQ[d];return`<tr><th>${D[d]}</th>${[0,1,2].map(s=>`<td class="${cl(c[s],r[s])}">${c[s]}/${r[s]}</td>`).join('')}</tr>`}).join('');
+ const my=ME>=0?`<div class="c sc"><b>Your year: days off and shift</b><table><tr><th>Month</th><th>Type</th><th>Days off</th><th>Shift</th></tr>${K.map(m=>{const j=MY[m][ME];return j==null?'':`<tr><td>${mn(m)}</td><td><span class="ch t${Y[ME][m]}">${Y[ME][m]}</span></td><td>${offN(SL[j].p)}</td><td>${SH[SL[j].s][0]} ${SH[SL[j].s][1]}</td></tr>`}).join('')}</table></div>`:'';
+ return`<div class="c"><b>Coverage check for the whole year</b><div class="sub">Built from your draft and the base table. Each month has 22 slots (7 Early, 7 Mid, 8 Late) and each slot gets one agent, so the A, B and C months turn into exact days off and shift hours. Tap a month for the day-by-day view.</div><div class="bar">${strip}</div><div class="sc"><table><tr><th>${mn(YC)}</th><th>Early</th><th>Mid</th><th>Late</th></tr>${tr}</table></div></div>${my}`}
+function vYear(){const ag=ST.setup.ag,B=ST.board,{Y,ord}=draft(),K=[...Array(12).keys()],mn=k=>ml(mon(k)).split(' ')[0],L3=['A','B','C'],ra=rkOf('pa',ME),rb=rkOf('pb',ME),rc=rkOf('pc',ME);
+ const btn=k=>{const l=rkOf(k,ME),full=l.length>=lim(k,ME);return K.map(m=>{const r=l.indexOf(m),o=PR.find(x=>x!=k&&rkOf(x,ME).includes(m));return`<button class="mb ${r>=0?'s'+PL[k]:o?'oth':''}"${ME<0||B.lock||(r<0&&full)?' disabled':''} onclick="togP('${k}',${m})">${mn(m)}${r>=0?' #'+(r+1):o?' ('+PL[o]+')':''}</button>`}).join(' ')};
+ const hd=K.map(m=>{const c=L3.map(L=>IDX.filter(i=>Y[i][m]==L).length);return`<th class="${c[0]==9&&c[1]==5&&c[2]==8?'ok':'wr'}">${mn(m)}<div>${c[0]}/9 ${c[1]}/5 ${c[2]}/8</div></th>`}).join('');
+ const rows=IDX.map(i=>{const c=L3.map(L=>Y[i].filter(x=>x==L).length),good=c[0]>=4&&c[0]<=5&&c[1]>=2&&c[1]<=3;
+  return`<tr${i==ME?' style="font-weight:700"':''}><td>${esc(ag[i].n)}</td>${Y[i].map(x=>`<td><span class="ch t${x}">${x||'·'}</span></td>`).join('')}<td>A${c[0]} B${c[1]} C${c[2]}</td><td>${!c[0]&&!c[1]&&!c[2]?'<span class="sub">not chosen yet</span>':c[0]<5?'<span class="b wr">first slot next year</span>':good?'<span class="b ok">full year</span>':''}</td></tr>`}).join('');
+ const hA=ME>=0?ra.slice(0,5).filter(m=>Y[ME][m]=='A').length:0,hB=ME>=0?rb.slice(0,3).filter(m=>Y[ME][m]=='B').length:0;
+ const hC=ME>=0?rc.filter(m=>Y[ME][m]=='C').length:0,got=ME>=0&&(ra.length||rb.length||rc.length)?`<div class="msg ok">You got ${hA} of your ${ra.length} A months, ${hB} of your ${rb.length} B months and ${hC} of your ${rc.length} C months.</div>`:'';
+ return who()+`<div class="c"><b>Year plan: 12 months from ${lab(0)}</b><div class="sub">How it works: a snake draft. Everyone ranks the months they want as A, then as B, then as C, best first. The draft order is drawn at the start, and agents who missed their 5th weekend last year go first. In round 1 each agent in order gets their best open A month, round 2 runs in reverse order, and so on for 5 rounds, so a late pick in one round is an early pick in the next. B is then drafted the same way, in reverse order, for 3 rounds. C months you pick are protected where possible, and C is whatever months are left, which is how every month lands on 9 A, 5 B and 8 C and how everyone ends with 4–5 A, 2–3 B and 4–5 C. Change your ranking any time until the lead locks picks; the result updates live. Agents who haven’t ranked stay blank until the lead turns on auto-fill.</div>
+<div class="sub" style="margin-top:8px"><b>Draft order:</b> ${ord.map((i,x)=>`<span class="ch ${ag[i].c?'tA':''}">${x+1}. ${esc(ag[i].n)}</span>`).join(' ')}</div>${TL?`<div class="bar"><button class="p" onclick="drawOrd()">Draw draft order</button><button onclick="wr('board',{auto:${B.auto?0:1}})">${B.auto?'Stop auto-filling agents who haven’t ranked':'Auto-fill agents who haven’t ranked'}</button><button onclick="closeYear()">Close year, open next</button><button onclick="resetAll()">Clear all data, start again</button></div>`:''}</div>
+${ME<0?'<div class="c sub">Choose your name above to rank your months.</div>':`<div class="c"><b>Pick your months</b><div class="sub">Each month can be only one letter. Your limits: A ${lim('pa',ME)}, B ${lim('pb',ME)}, C ${lim('pc',ME)} (set by your place in the draft order; the allowed mixes are A5 B2 C5, A5 B3 C4 and A4 B3 C5). Your picks are placed first, then the draft fills anything left within the same limits. Tap a month to pick it; tap it again to remove it. If a month already has another letter, tapping it under a new letter moves it there. Once a letter is full, remove a month before adding another. Numbers show your order of preference, best first.</div>
+<div style="margin-top:8px"><span class="ch tA">A</span><b>Sat–Sun off</b><span class="cnt tA">${ra.length}/${lim('pa',ME)}</span> <span class="sub">(5, or 4 if you are one of the last two in order)</span><div class="bar">${btn('pa')}</div></div>
+<div><span class="ch tB">B</span><b>Sun–Mon or Fri–Sat off</b><span class="cnt tB">${rb.length}/${lim('pb',ME)}</span> <span class="sub">(2 or 3, depending on your place in the order)</span><div class="bar">${btn('pb')}</div></div>
+<div><span class="ch tC">C</span><b>Midweek off</b><span class="cnt tC">${rc.length}/${lim('pc',ME)}</span> <span class="sub">(4 or 5; the draft keeps A and B away from these months)</span><div class="bar">${btn('pc')}</div></div>
+${got}</div>`}
+<div class="c sc"><table><tr><th>Agent</th>${hd}<th>Year</th><th></th></tr>${rows}</table></div>${covSec(Y)}`}
+const TB=['Seat map','Pick','My plan','Year plan','Coverage','Team','Setup'],V=[vGame,vPick,vMine,vYear,vCov,vTeam,vSet];
+function render(){
+ derive();
+ $('tabs').innerHTML=TB.map((x,i)=>`<button class="${i==T?'on':''}" onclick="T=${i};render()">${x}</button>`).join('');
+ $('app').innerHTML=(ERR?`<div class="msg bad">${esc(ERR)}</div>`:'')+(DB&&ld<2&&!ERR?`<div class="msg wr">${slow?'Shared data is slow or unreachable. Showing what has loaded.':'Loading shared data…'}</div>`:'')+V[T]();
+ $('foot').textContent='Window '+(ST.board.win||1)+'. '+(DB?'Shared live: everyone with the link sees the same seats, coverage and swaps.':'Saved in this browser only.');
+}
+const ok=()=>{const a=document.activeElement;if(a&&/^(INPUT|SELECT|TEXTAREA)$/.test(a.tagName)&&$('app').contains(a))return;render()};
+(async()=>{
+ try{if(typeof claude!='undefined')DB=await claude.use('db')}catch(e){}
+ if(DB){
+  try{const U=await claude.use('user');TL=U?!!(await U.canEdit()):false}catch(e){TL=false}
+  const sub=d=>DB.doc(d+'/main').onSnapshot(s=>{ex[d]=s.exists;if(s.exists)ST[d]=JSON.parse(JSON.stringify(s.data()));if(!s.metadata.fromCache)ld++;if(d=='board'&&!seen&&!s.metadata.fromCache){seen=1;T=0}ok()},e=>{ERR='Shared data error: '+(e.code||'unknown');render()});
+  sub('setup');sub('board');setTimeout(()=>{slow=1;ok()},10000);
+ }else{try{const x=JSON.parse(localStorage.getItem('sb3'));if(x&&x.setup&&x.board)Object.assign(ST,x)}catch(e){}}
+ render();
+})();
+</script></body></html>
